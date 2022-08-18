@@ -1,0 +1,28 @@
+@use '../global' as g;
+
+.contact {
+	width: 100%;
+	flex: 1;
+	padding: 35vh 3rem 0;
+	@include g.flex-col(flex-start);
+	& h1 {
+		color: #f9f9f9;
+	}
+	& p {
+		font-size: 5rem;
+		font-weight: 800;
+        color: #848484;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contact {
+		& h1 {
+			font-size: 1.4rem;
+		}
+		& p {
+			font-size: 3rem;
+			font-weight: 800;
+		}
+	}
+}

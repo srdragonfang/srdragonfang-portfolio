@@ -1,0 +1,74 @@
+@use '../global' as g;
+
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+/* -------------------------------------------------------------------------- */
+footer {
+	margin-top: 15rem;
+	// responsive
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	// style
+	color: #f9f9f9;
+
+	@include g.flex-col(space-between);
+}
+.socialBar {
+	width: 100%;
+	flex: 1;
+	padding: 35vh 3rem 0;
+	@include g.flex-col(flex-start);
+	& h1 {
+		color: #f9f9f9;
+	}
+	& p {
+		font-size: 5rem;
+		font-weight: 800;
+        color: #848484;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.socialBar {
+		& h1 {
+			font-size: 1.4rem;
+		}
+		& p {
+			font-size: 3rem;
+			font-weight: 800;
+		}
+	}
+}
+.credits {
+	height: max-content;
+	width: 100%;
+	padding: 3rem;
+	font-weight: 700;
+	color: rgb(210, 246, 218);
+	text-shadow: 1px 5px 25px rgba(0, 255, 0, 0.5),
+		1px -5px 15px rgba(0, 255, 0, 0.5);
+	@include g.flex-row(space-between);
+	// gap: 7rem;
+}
+@media screen and (max-width: 768px) {
+	.credits {
+		padding: 3rem 1rem;
+		flex-direction: column;
+		@include g.flex-col(center);
+		gap: 1rem;
+	}
+}
+
+@keyframes font-tranformer2 {
+	0% {
+		text-transform: uppercase;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		text-transform: capitalize;
+		opacity: 1;
+	}
+}

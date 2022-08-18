@@ -1,0 +1,61 @@
+@use './mixin';
+@use './variables' as v;
+/* -------------------------------------------------------------------------- */
+/*                                   section                                  */
+/* -------------------------------------------------------------------------- */
+.section {
+	width: 100vw;
+	min-height: 100vh;
+    // margin-top: 10rem;
+    padding: 0 v.$padding-base;
+    border: 3px solid black;
+}
+/* -------------------------------------------------------------------------- */
+/*                                   button                                   */
+/* -------------------------------------------------------------------------- */
+.btn {
+	// box
+	outline: unset;
+	border: unset;
+	cursor: pointer;
+	// background: transparent;
+	&-link {
+		// box
+		border: 3px dashed transparent;
+		padding: 0.5rem 2rem;
+		margin-bottom: 0.5rem;
+		// text
+		font-weight: 600;
+		color: inherit;
+
+		&:hover {
+			// box
+			border: 3px dashed #2fff89;
+			// animation
+			transition: 0.5s ease-in-out;
+		}
+	}
+	&-close {
+		color: #f9f9f9;
+		background: #191919;
+		cursor: pointer;
+		// @include center-center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.row__line {
+    width: 20%;
+    height: 10px;
+    @include mixin.bg-matrix;
+    margin-bottom: 1rem;
+}
+.row__square {
+    width: 30%;
+    height: 15px;
+    @include mixin.bg-matrix;
+    margin-bottom: 1rem;
+}

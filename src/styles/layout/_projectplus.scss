@@ -1,0 +1,43 @@
+@use '../global/' as g;
+/* --------------------------- portfolio > project -------------------------- */
+.project {
+	// @include g.bg-matrix;
+	height: max-content !important;
+	&__list--row {
+		gap: 1rem;
+		@include g.flex-row(center);
+	}
+	&__list--col {
+		@include g.flex-col(center);
+	}
+	&__list--row,
+	&__list--col {
+		width: 100%;
+		padding: auto;
+		margin: 3rem 0 0;
+		flex-wrap: wrap;
+		// gap: 3rem;
+
+		h2 {
+			margin: 1rem 0;
+			span {
+				text-decoration: underline;
+			}
+		}
+	}
+	&__list--buttons {
+		@include g.flex-row(center);
+	}
+
+	&__info {
+		@include g.flex-row(center);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.project {
+		&__info {
+			@include g.flex-col(flex-start);
+		}
+	}
+}

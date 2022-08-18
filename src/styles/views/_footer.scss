@@ -1,0 +1,6 @@
+@use '../global/mixin' as m;
+.footer {
+    width: 100%;
+    height: 100vh;
+    @include m.flex-col(space-between);
+}
