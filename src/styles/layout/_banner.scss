@@ -1,0 +1,11 @@
+@use '../global/' as g;
+
+.banner {
+	@include g.flex-row(flex-end);
+	font-size: 5rem;
+
+	&__title {
+		writing-mode: vertical-lr;
+		vertical-align: text-top;
+	}
+}

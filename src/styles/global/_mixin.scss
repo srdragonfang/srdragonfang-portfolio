@@ -1,4 +1,3 @@
-
 /* -------------------------------------------------------------------------- */
 /*                               mixin: flexbox                               */
 /* -------------------------------------------------------------------------- */
@@ -44,24 +43,14 @@
 /*                          background matrix effect                          */
 /* -------------------------------------------------------------------------- */
 @mixin bg-matrix {
-    // background: url('../assets/images/banner/bg03b.png')
-	// 					84px -1080px
-	// 					no-repeat,
-	// 				url('../assets/images/banner/bg01b.png')
-	// 					426px -1080px
-	// 					no-repeat,
-	// 				url('../assets/images/banner/bg02b.png')
-	// 					730px -1080px
-	// 					no-repeat,
-	// 				url('../assets/images/banner/bg03b.png')
-	// 					872px -1080px
-	// 					no-repeat,
-	// 				url('../assets/images/banner/bg02b.png')
-	// 					95% -1080px
-	// 					no-repeat,
-	// 				url('../assets/images/banner/bg00.jpg') 0 0 repeat;
-	// 			background-color: #111;
-	// 			-webkit-animation: waterfall 10s linear infinite;
-	// 			animation: waterfall 10s linear infinite;
-    background-color: #191919;
+	background: url('../assets/images/banner/bg03b.png') 84px -1080px no-repeat,
+		url('../assets/images/banner/bg01b.png') 426px -1080px no-repeat,
+		url('../assets/images/banner/bg02b.png') 730px -1080px no-repeat,
+		url('../assets/images/banner/bg03b.png') 872px -1080px no-repeat,
+		url('../assets/images/banner/bg02b.png') 95% -1080px no-repeat,
+		url('../assets/images/banner/bg00.jpg') 0 0 repeat;
+	background-color: #111;
+	-webkit-animation: waterfall 10s linear infinite;
+	animation: waterfall 10s linear infinite;
+	// background-color: #191919;
 }

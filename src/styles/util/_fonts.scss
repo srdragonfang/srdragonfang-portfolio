@@ -1,14 +1,13 @@
-// @font-face {
-// 	// This is parsed as a normal function call that takes a quoted string.
-// 	// src: url('../assets/font/Matrix.ttf') format('truetype');
+@font-face {
+	// This is parsed as a normal function call that takes a quoted string.
+	src: url('../assets/font/Matrix.ttf') format('truetype');
 
-// 	font-family: Matrix;
-// 	font-weight: 100;
-// }
+	font-family: Matrix;
+	font-weight: 100;
+}
 // Font-family for a project
 $font: Arial, Helvetica, sans-serif;
-// $font-martrix: 350% Matrix, sans-serif;
-$font-martrix: Arial, Helvetica, sans-serif;
+$font-martrix: 350% Matrix, sans-serif;
 
 // Font-weight for a project
 $font-light: 400;
