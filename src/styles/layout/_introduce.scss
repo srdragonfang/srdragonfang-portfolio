@@ -1,0 +1,98 @@
+@use '../global/' as g;
+
+.introduce {
+	padding: 5rem 0;
+	height: max-content !important;
+	// @include g.flexbox(col));
+	&__container {
+		padding: 3rem 10rem;
+		width: 100%;
+		height: 100%;
+		@include g.flex-row(none);
+		// display: grid;
+	}
+
+	&__images {
+		flex: 0.4;
+		@include g.flex-col(center);
+		// #test-background
+	}
+}
+.introduce__content {
+	flex: 0.6;
+	padding: 5rem 0;
+	@include g.flex-col(flex-start);
+	text-align: left;
+	// background: brown;
+	font-size: 2.4rem;
+
+	& p {
+		width: 100%;
+		font-weight: 400;
+		& span {
+			padding: 0.5rem;
+			text-shadow: 1px 5px 25px #daa520,
+				1px -5px 15px #daa520;
+		}
+
+		& a {
+			padding: 0.5rem;
+			text-shadow: 1px 5px 25px rgb(0, 255, 0),
+				1px -5px 15px rgb(0, 255, 0);
+		}
+	}
+}
+.introduce__img {
+	@include g.flex-row(center);
+}
+.introduce__img--outer {
+	// width: 20px;
+	// height: 100%;
+	border: 3px solid #191919;
+	cursor: pointer;
+	padding: 0.5rem;
+}
+.introduce__img--inner {
+	width: 60px;
+	height: 500px;
+	text-align: center;
+	border: 3px solid #191919;
+	white-space: wrap;
+	writing-mode: horizontal-tb;
+}
+
+.introduce__img--inner img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.introduce__img--outer:hover img {
+	transform: scale(1.2);
+	transition: 3s linear;
+}
+
+@media screen and (max-width: 768px) {
+	.introduce {
+		// padding: 5rem;
+		height: max-content !important;
+		// @include g.flexbox(col));
+		&__container {
+			padding: 5rem 3rem;
+			width: 100%;
+			height: 100%;
+			@include g.flex-col(none);
+			// display: grid;
+		}
+
+		&__images {
+			flex: 1;
+			@include g.flex-col(center);
+			// #test-background
+		}
+	}
+	.introduce__content {
+		flex: 1;
+		padding: 5rem 0;
+	}
+}

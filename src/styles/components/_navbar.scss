@@ -1,3 +1,5 @@
+@use '../global/' as g;
+
 nav {
 	background-image: url('/public/assets/images/background/banner.png');
 	background-position: center;
@@ -5,6 +7,7 @@ nav {
 	width: 100%;
 	transition: all 0.5s;
 	z-index: 101;
+	height: 50px;
 }
 
 .fixed-nav {
@@ -12,12 +15,13 @@ nav {
 	top: 0;
 	left: 0;
 	right: 0;
-	box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: g.$box-shadow-out;
 }
 
 nav ul {
 	list-style: none;
 	display: flex;
+	height: 50px;
 }
 
 nav li {
@@ -26,27 +30,68 @@ nav li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 1rem 0;
+	cursor: pointer;
 }
 
-li.logo {
+nav li.brand {
 	max-width: 0;
 	overflow: hidden;
-	background: white;
+	background: #daa520;
 	transition: all 0.5s;
-	font-weight: 600;
-	font-size: 30px;
+	color: #f9f9f9;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.175rem;
 }
 
-li.logo a {
-	color: black;
+nav li.logo {
+	position: relative;
+	left: -20px;
+	top: 5px;
+	max-width: 0;
+	overflow: hidden;
+	background: #daa520;
+	transition: all 0.5s;
 }
 
-.fixed-nav li.logo {
+nav li:not(.brand):hover {
+	background-color: #f9f9f9;
+}
+.fixed-nav li.brand {
 	max-width: 500px;
 }
 
+.fixed-nav li.logo {
+	max-width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border-left: 20px solid #494949;
+	border-right: 20px solid #daa520;
+	background-color: #f9f9f9;
+	z-index: 1;
+}
+
+.fixed-nav li.logo:hover {
+	animation: moving_eye 2s linear forwards;
+}
+
+@keyframes moving_eye {
+	0% {
+		border-left: 5px solid #494949;
+		border-right: 5px solid #daa520;
+	}
+	50% {
+		border-left: 20px solid #494949;
+		border-right: 20px solid #daa520;
+	}
+	100% {
+		border-left: 5px solid #494949;
+		border-right: 5px solid #daa520;
+	}
+}
 nav a {
-    font-weight: 700;
+	font-weight: 700;
 	text-decoration: none;
 	padding: 0.5rem 1rem;
 	display: inline-block;

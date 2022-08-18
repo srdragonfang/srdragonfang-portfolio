@@ -6,7 +6,8 @@
 	padding: 35vh 3rem 0;
 	@include g.flex-col(flex-start);
 	& h1 {
-		color: #f9f9f9;
+        color: rgb(210, 246, 218);
+        text-shadow: g.$text-shadow;
 	}
 	& p {
 		font-size: 5rem;

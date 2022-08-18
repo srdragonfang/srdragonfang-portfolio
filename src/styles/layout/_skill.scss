@@ -6,11 +6,11 @@
     margin-bottom: 15rem;
 	@include g.flex-col(flex-start);
 
-    & h1 {
-        background-image: url('/public/assets/images/background/banner.png');
-        background-position: center;
-        background-size: cover;
-    }
+    // & h1 {
+    //     background-image: url('/public/assets/images/background/banner.png');
+    //     background-position: center;
+    //     background-size: cover;
+    // }
 	&__container {
 		width: 100%;
 		@include g.flex-col(center);
