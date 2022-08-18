@@ -15,7 +15,7 @@ const ProjectPlus = () => {
 						href='https://github.com/srdragonfang/'
 						target='_blank'
 						rel='noreferrer'
-						className='btn-effect-1 section-item-download'
+						className='btn btn__primary btn-effect-1'
 					>
 						<p className='item-show'>github</p>
 						<AiOutlineExport className='item-hide' size={30} />
@@ -24,7 +24,7 @@ const ProjectPlus = () => {
 						href='https://codepen.io/srdragonfang/'
 						target='_blank'
 						rel='noreferrer'
-						className='btn-effect-1 section-item-download'
+						className='btn btn__primary btn-effect-1'
 					>
 						<p className='item-show'>codepen</p>
 						<AiOutlineExport className='item-hide' size={30} />
@@ -38,7 +38,7 @@ const ProjectPlus = () => {
 				<div className='project__list--buttons'>
 					<a
 						href='#about-id'
-						className='btn-effect-1 section-item-download'
+						className='btn btn__primary btn-effect-1'
 					>
 						<ImCloudDownload size={30} />
 					</a>

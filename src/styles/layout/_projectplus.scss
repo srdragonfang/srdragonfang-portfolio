@@ -30,7 +30,9 @@
 	}
 
 	&__info {
-		@include g.flex-row(center);
+		margin-bottom: g.$section-gap;
+        @include g.flex-row(center);
+
 	}
 }
 
