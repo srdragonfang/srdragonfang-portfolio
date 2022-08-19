@@ -145,6 +145,8 @@ body {
   margin: 0;
   font-size: 2rem;
   background: #e4ebf5;
+  width: 100vw !important;
+  overflow-x: hidden;
 }
 
 img {
@@ -930,17 +932,24 @@ body.remove-scroll {
   grid-area: item__06;
 }
 
+@media screen and (min-width: 411x) {
+  .project__container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem;
+  }
+}
 @media screen and (min-width: 676px) {
   .project__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
+    gap: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
   .project__container {
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -985,6 +994,9 @@ body.remove-scroll {
   background-image: url("/public/assets/images/background/banner.png");
   background-position: center;
   background-size: cover;
+}
+.project__item:hover h2 {
+  color: #f9f9f9;
 }
 
 .item__info {

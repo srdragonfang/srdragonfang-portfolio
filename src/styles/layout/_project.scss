@@ -38,19 +38,27 @@ body.remove-scroll {
 	grid-area: item__06;
 }
 
+
+@media screen and (min-width: 411x) {
+	.project__container {
+		display: grid;
+		grid-template-columns: auto;
+		gap: 2rem;
+	}
+}
+
 @media screen and (min-width: 676px) {
 	.project__container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		-webkit-column-gap: 2rem;
-		-moz-column-gap: 2rem;
-		column-gap: 2rem;
+		gap: 2rem;
 	}
 }
 
 @media screen and (min-width: 992px) {
 	.project__container {
 		grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
 	}
 }
 @media screen and (min-width: 1170px) {
@@ -99,9 +107,9 @@ body.remove-scroll {
     &:hover .project__item--info {
         @include g.background-art;
     }
-	// &:hover h2 {
-	// 	display: none;
-	// }
+	&:hover h2 {
+		color: #f9f9f9;
+	}
 	// &:hover .item__info {
 	// 	display: flex;
 	// }
