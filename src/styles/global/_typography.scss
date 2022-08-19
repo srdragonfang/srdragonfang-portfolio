@@ -20,7 +20,17 @@ h1 {
 	// color: rgb(210, 246, 218);
 	text-shadow: g.$text-shadow-dark;
 	// color: #daa520;
-	font-weight: 700;
+}
+
+h2 {
+	width: 100%;
+	font: fonts.$font-martrix;
+	font-size: 4rem;
+	font-weight: 800;
+	letter-spacing: 0.25rem;
+	line-height: 1.25;
+	text-align: center;
+	// color: rgb(210, 246, 218);
 }
 /* Grouping content   ========================================================================== */
 /** * 

@@ -11,16 +11,15 @@ const Skill = () => {
 							<div className='card' key={index}>
 								<h3 className='title'>{item.title}</h3>
 								<div className='card__bottom'>
-									<div className='bar'>
-										<div
-											className='filledbar'
-											style={{ width: item.percent }}
-										></div>
-									</div>
-
 									<div className='card__icon'>
 										{item.icon}
 									</div>
+                                    <div className='bar'>
+                                    <div
+                                        className='filledbar'
+                                        style={{ width: item.percent }}
+                                    ></div>
+                                </div>
 								</div>
 							</div>
 						);

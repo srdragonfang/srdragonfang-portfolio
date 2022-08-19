@@ -1,9 +1,7 @@
 @use '../global/' as g;
 
 nav {
-	background-image: url('/public/assets/images/background/banner.png');
-	background-position: center;
-	background-size: cover;
+    @include g.background-art;
 	width: 100%;
 	transition: all 0.5s;
 	z-index: 101;

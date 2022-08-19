@@ -106,3 +106,12 @@
 			872px 2160px, 95% 2970px, 0 1460px;
 	}
 }
+
+@keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
