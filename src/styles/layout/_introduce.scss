@@ -1,11 +1,8 @@
 @use '../global/' as g;
 
 .introduce {
-	padding: 5rem 0;
-	height: max-content !important;
-	// @include g.flexbox(col));
 	&__container {
-		padding: 3rem 10rem;
+		padding: 0 10rem 3rem;
 		width: 100%;
 		height: 100%;
 		@include g.flex-row(none);

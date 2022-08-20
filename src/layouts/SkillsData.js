@@ -1,11 +1,11 @@
-import { DiCss3, DiSass, DiResponsive } from 'react-icons/di';
+import { DiCss3, DiSass } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { RiHtml5Fill, RiReactjsLine } from 'react-icons/ri';
 import { AiFillGithub } from 'react-icons/ai';
 import { AiFillApi, AiOutlineMobile } from 'react-icons/ai';
 
-// import { BsFillBootstrapFill } from 'react-icons/bs';
-// import { SiTailwindcss } from 'react-icons/si';
+import { BsFillBootstrapFill } from 'react-icons/bs';
+import { SiTailwindcss } from 'react-icons/si';
 export const SkillsData = [
 	{
 		title: 'HTML',
@@ -18,17 +18,17 @@ export const SkillsData = [
 		percent: '57%',
 		icon: <DiCss3 />,
 	},
-	// {
-	// 	title: 'BOOTSTRAP',
-	// 	percent: '57%',
-	// 	width: 'max-content',
-	// 	icon: <BsFillBootstrapFill />,
-	// },
-	// {
-	// 	title: 'TAILWIND',
-	// 	percent: '57%',
-	// 	icon: <SiTailwindcss />,
-	// },
+	{
+		title: 'BOOTSTRAP',
+		percent: '57%',
+		width: 'max-content',
+		icon: <BsFillBootstrapFill />,
+	},
+	{
+		title: 'TAILWIND',
+		percent: '57%',
+		icon: <SiTailwindcss />,
+	},
 	{
 		title: 'SASS',
 		percent: '47%',
@@ -69,4 +69,8 @@ export const SkillsData = [
 		percent: '21%',
 		icon: <AiOutlineMobile />,
 	},
+	{
+		title: 'SKILLS',
+		percent: '0%',
+	}
 ];

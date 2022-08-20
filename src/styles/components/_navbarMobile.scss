@@ -3,28 +3,28 @@
 
 .authorController {
 	width: 100vw;
-	height: 120px;
+	height: 200px;
 	z-index: 101;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
+	// animation: spin3D 2.2s linear 0s infinite;
 
 	& .avatar__outter {
 		width: 70px;
 		height: 70px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		border-top: 5px solid #daa520;
 		border-right: 5px solid #191919;
 		border-bottom: 5px solid #191919;
 		border-left: 5px solid #daa520;
-		@include g.background-art;
 		transform: rotate(45deg);
+		@include g.background-art;
+		@include g.flex-row(center);
 	}
 	& .avatar__inner {
-        background: #e4ebf5;
+		background: #e4ebf5;
 		width: 30px;
 		height: 30px;
 		border-top: 5px solid #191919;
@@ -33,19 +33,19 @@
 		border-left: 5px solid #191919;
 	}
 
-    & img {
-        display: none;
-    }
+	& img {
+		display: none;
+	}
 
-    & .authorCtrl {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-    
-        transition: all 3s ease-in-out;
-    }
+	& .authorCtrl {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+		font-size: 2rem;
+
+		transition: all 3s ease-in-out;
+	}
 }
 
 // skill x contact
@@ -72,7 +72,7 @@
 }
 
 .controller__bar--button {
-    width: 50px;
+	width: 50px;
 	height: 270px;
 	display: flex;
 	justify-content: center;
@@ -86,11 +86,10 @@
 	background: #191919;
 	border: 3px solid #daa520;
 }
-.controller__bar--button  a {
-    transition: all 1s linear;
-    font-size: 4rem;
+.controller__bar--button a {
+	transition: all 1s linear;
+	font-size: 4rem;
 }
-
 
 // skills
 .topLeft {
@@ -115,9 +114,9 @@
 	clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 82%);
 }
 
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 	.authorController {
+		height: max-content !important;
 		position: fixed;
 		right: 0;
 		left: 0;
@@ -127,8 +126,8 @@
 		z-index: 101;
 
 		& .avatar__inner {
-            width: 60px;
-            height: 60px;
+			width: 60px;
+			height: 60px;
 			overflow: hidden;
 			& img {
 				// display: none;
@@ -167,11 +166,7 @@
 	.authorController:hover {
 		animation: controller__button--translate 15s linear;
 	}
-
 }
-
-
-
 
 @keyframes controller__button--translate {
 	to {

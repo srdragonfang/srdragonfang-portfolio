@@ -4,8 +4,7 @@ body.remove-scroll {
 	overflow-y: hidden;
 }
 .project {
-	height: max-content;
-	@include g.center-center;
+	@include g.flex-col(flex-start);
 }
 .project__item {
 	border: 5px solid black;

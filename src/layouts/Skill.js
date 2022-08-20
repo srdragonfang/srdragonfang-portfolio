@@ -1,29 +1,38 @@
 import React from 'react';
 import { SkillsData } from './SkillsData';
 const Skill = () => {
+	const skillList = React.useRef();
+	console.log(skillList);
+	const toggleSkills = () => {
+		skillList.current.classList.toggle('view__skills');
+	};
 	return (
-		<div className='skills' id='skills-id'>
-			<h1>SKILLS</h1>
+		<div className='section skills' id='skills-id'>
+			<div className='section__title'>
+				<div className='section__title--cycle'></div>
+				<h1>SKILLS</h1>
+				<div className='section__title--line'></div>
+			</div>
 			<div className='skills__container'>
-				<div className='skills__container--list'>
+				<div className='skills__container--list' ref={skillList}>
 					{SkillsData.map((item, index) => {
 						return (
 							<div className='card' key={index}>
-								<h3 className='title'>{item.title}</h3>
+								<h3 className='card__title'>{item.title}</h3>
 								<div className='card__bottom'>
 									<div className='card__icon'>
 										{item.icon}
 									</div>
-                                    <div className='bar'>
-                                    <div
-                                        className='filledbar'
-                                        style={{ width: item.percent }}
-                                    ></div>
-                                </div>
 								</div>
 							</div>
 						);
 					})}
+				</div>
+				<div
+					className='card__button'
+					onClick={toggleSkills}
+				>
+					View Skills
 				</div>
 			</div>
 		</div>

@@ -3,7 +3,11 @@ import React from 'react';
 const Introduce = () => {
 	return (
 		<div className='section introduce' id='introduce-id'>
-			<h1>Introduce</h1>
+			<div className='section__title'>
+				<div className='section__title--square'></div>
+				<h1>Introduce</h1>
+				<div className='section__title--line'></div>
+			</div>
 			<div className='introduce__container'>
 				<div className='introduce__content'>
 					<p>

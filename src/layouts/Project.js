@@ -20,6 +20,11 @@ const Project = () => {
 	}
 	return (
 		<div className='section project' id='projects-id'>
+			<div className='section__title'>
+				<div className='section__title--triagle'></div>
+				<h1>PROJECTS</h1>
+				<div className='section__title--line'></div>
+			</div>
 			<div className='project__container'>
 				{ProjectsData.map((item, index) => {
 					return (
@@ -41,9 +46,7 @@ const Project = () => {
 									className='btn btn__primary btn-effect-1'
 									onClick={() => toggleButton(item)}
 								>
-									<span>
-										View Project
-									</span>
+									<span>View Project</span>
 								</div>
 							</div>
 						</div>

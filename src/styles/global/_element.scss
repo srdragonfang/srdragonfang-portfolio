@@ -1,14 +1,46 @@
-@use './mixin';
+@use './mixin' as g;
 @use './variables' as v;
 /* -------------------------------------------------------------------------- */
 /*                                   section                                  */
 /* -------------------------------------------------------------------------- */
 .section {
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
     margin-bottom: 15rem;
     padding: 0 v.$padding-base;
     // border: 3px solid black;
+}
+
+
+.section__title {
+    width: 100%;
+    margin: 3rem 0;
+    gap: 1rem;
+    @include g.flex-row(flex-start);
+
+    &--square {
+        height: 30px;
+        width: 30px;
+        @include g.bg-matrix;
+    }
+    &--cycle {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        @include g.bg-matrix;
+    }
+    &--triagle {
+        height: 30px;
+        width: 30px;
+        clip-path: polygon(100% 0, 0 0, 51% 100%);
+        @include g.bg-matrix;
+    }
+
+    &--line {
+        height: 5px;
+        width: 150px;
+        @include g.bg-matrix;
+    }
 }
 /* -------------------------------------------------------------------------- */
 /*                                   button                                   */
@@ -50,12 +82,12 @@
 .row__line {
     width: 20%;
     height: 10px;
-    @include mixin.bg-matrix;
+    @include g.bg-matrix;
     margin-bottom: 1rem;
 }
 .row__square {
     width: 30%;
     height: 15px;
-    @include mixin.bg-matrix;
+    @include g.bg-matrix;
     margin-bottom: 1rem;
 }
