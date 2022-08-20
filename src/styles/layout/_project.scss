@@ -5,7 +5,7 @@ body.remove-scroll {
 }
 .project {
 	height: max-content;
-    @include g.center-center;
+	@include g.center-center;
 }
 .project__item {
 	border: 5px solid black;
@@ -40,7 +40,6 @@ body.remove-scroll {
 }
 
 .project__container {
-	background-color: brown;
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -55,19 +54,13 @@ body.remove-scroll {
 
 @media screen and (max-width: 768px) {
 	.project__container {
-		border: 1px solid black;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
 		flex-wrap: wrap;
 		gap: 1rem;
-		background-color: salmon;
+        @include g.flex-row(space-between);
 	}
-
-    .project__item {
-        flex: 1;
-    }
+	.project__item {
+		flex: 1;
+	}
 }
 
 .project__item {
@@ -177,6 +170,8 @@ body.remove-scroll {
 	box-shadow: g.$box-shadow-out;
 	// color: #f9f9f9;
 }
+
+
 .project__details {
 	/* display */
 	display: flex;
@@ -207,15 +202,19 @@ body.remove-scroll {
 		box-shadow: unset;
 	}
 	.project__details {
+        flex-direction: row;
 		overflow-y: scroll;
-		width: 100vw;
+		width: 100%;
 	}
 	.project__details--img {
-		width: 100%;
+		width: max-content;
+        object-fit: contain;
 	}
 }
 @media screen and (max-width: 768px) {
 	.project__details {
 		overflow-y: scroll;
+        flex-direction: column;
+
 	}
 }

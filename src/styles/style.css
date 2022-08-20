@@ -36,6 +36,11 @@
 }
 
 /* Button Effect #1 */
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 1rem;
+  }
+}
 .btn {
   padding: 2rem;
   cursor: pointer;
@@ -145,7 +150,10 @@ body {
   margin: 0;
   font-size: 2rem;
   background: #e4ebf5;
-  width: 100vw !important;
+}
+
+.App {
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -946,7 +954,6 @@ body.remove-scroll {
 }
 
 .project__container {
-  background-color: brown;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -958,14 +965,12 @@ body.remove-scroll {
 
 @media screen and (max-width: 768px) {
   .project__container {
-    border: 1px solid black;
+    flex-wrap: wrap;
+    gap: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    background-color: salmon;
   }
   .project__item {
     flex: 1;
@@ -1109,16 +1114,22 @@ body.remove-scroll {
     box-shadow: unset;
   }
   .project__details {
+    flex-direction: row;
     overflow-y: scroll;
-    width: 100vw;
+    width: 100%;
   }
   .project__details--img {
-    width: 100%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 @media screen and (max-width: 768px) {
   .project__details {
     overflow-y: scroll;
+    flex-direction: column;
   }
 }
 /* --------------------------- portfolio > project -------------------------- */

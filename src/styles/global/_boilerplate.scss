@@ -26,11 +26,12 @@ body {
 	margin: 0;
     font-size: 2rem;
     background: #e4ebf5;
-    width: 100vw !important;
-    overflow-x: hidden;
-
 }
 
+.App {
+    width: 100vw;
+    overflow-x: hidden;
+}
 // main {
 // 	display: block;
 // }

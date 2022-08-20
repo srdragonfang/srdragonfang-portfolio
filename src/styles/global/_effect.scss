@@ -34,6 +34,12 @@
 //     margin-left: 1rem;
 // }
 /* Button Effect #1 */
+
+@media screen and (max-width: 768px) {
+	.btn {
+		padding: 1rem;
+	}
+}
 .btn {
 	padding: 2rem;
 	cursor: pointer;
@@ -67,7 +73,7 @@
 	width: 160px;
 	height: 80px;
 	text-decoration: underline;
-    border: 3px solid #191919 !important;
+	border: 3px solid #191919 !important;
 
 	margin: 0.5rem;
 	font-weight: 600;
@@ -108,10 +114,10 @@
 }
 
 @keyframes spin {
-    0% {
-      --rotate: 0deg;
-    }
-    100% {
-      --rotate: 360deg;
-    }
-  }
+	0% {
+		--rotate: 0deg;
+	}
+	100% {
+		--rotate: 360deg;
+	}
+}
