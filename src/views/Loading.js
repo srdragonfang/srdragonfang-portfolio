@@ -1,5 +1,5 @@
 import React from 'react';
-import { GiSnakeSpiral } from 'react-icons/gi';
+import { IoMdFingerPrint } from 'react-icons/io';
 // react-router-dom
 import { Link } from 'react-router-dom';
 const Loading = () => {
@@ -12,7 +12,7 @@ const Loading = () => {
 					<div className='loading__symbol'>
 						<div className='loading__symbol--square'>
 							<div className='loading__symbol--cycle'>
-								<GiSnakeSpiral color='#daa520' size={60} />
+								<IoMdFingerPrint color='#daa520' size={60} />
 							</div>
 						</div>
 					</div>

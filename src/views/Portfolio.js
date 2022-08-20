@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import NavbarMobile from '../components/NavbarMobile';
 import Banner from '../layouts/Banner';
 import Introduce from '../layouts/Introduce';
 import Project from '../layouts/Project';
@@ -16,6 +17,7 @@ const Portfolio = () => {
 			<Skill />
 			<Project />
 			<ProjectPlus />
+			<NavbarMobile />
 			<Footer />
 		</div>
 	);

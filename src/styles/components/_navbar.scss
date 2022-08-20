@@ -5,10 +5,15 @@ nav {
 	transition: all 0.5s;
 	z-index: 101;
 	height: 50px;
-    overflow-y: hidden;
 	@include g.background-art;
 }
 
+@media screen and (max-width: 480px) {
+    nav {
+        display: none;
+    }
+    
+}
 .fixed-nav {
 	position: fixed;
 	top: 0;

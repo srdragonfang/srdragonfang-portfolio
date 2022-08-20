@@ -9,7 +9,9 @@
 	color: #daa520;
 	// font-family: $font-body;
 	// animation: fadeOut 3s ease-in-out forwards;
-	@include g.flex-col(space-between);
+    gap: 3rem;
+	@include g.flex-col(center);
+
 	&-title {
 		font-size: 10vh;
 	}
@@ -32,27 +34,26 @@
 	}
 
 	&__symbol {
-		padding: 0.3rem;
-		margin: 3rem 0;
 		width: 100%;
 		@include g.center-center;
 		&--square {
 			width: 100px;
 			height: 100px;
 			padding: 0.2rem;
-			@include g.center-center;
 			transition: 2s ease-in-out;
 			border: 3px groove goldenrod;
+			@include g.center-center;
 			&:active {
 				transform: rotate(-180deg);
 				cursor: pointer;
 			}
 			&:hover .loading__symbol--cycle {
 				border-radius: 50%;
-				transform: rotate(720deg);
+				transform: rotate(900deg);
 				border: 3px solid goldenrod;
 			}
 		}
+        
 		&--cycle {
 			@include g.center-center;
 			width: 100%;
