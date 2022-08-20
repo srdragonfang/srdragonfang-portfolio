@@ -321,6 +321,16 @@ h1 {
   text-shadow: 1px 5px 25px #191919, 1px -5px 15px #191919;
 }
 
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 h2 {
   width: 100%;
   font: 350% Matrix, sans-serif;
@@ -897,6 +907,9 @@ body.remove-scroll {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project__item {
@@ -932,34 +945,30 @@ body.remove-scroll {
   grid-area: item__06;
 }
 
-@media screen and (min-width: 411x) {
-  .project__container {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 2rem;
-  }
+.project__container {
+  background-color: brown;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3rem 3rem;
+  grid-auto-flow: row;
+  grid-template-areas: "item__01 item__02 item__02" "item__01 item__03 item__04" "item__05 item__06 item__04";
 }
-@media screen and (min-width: 676px) {
+
+@media screen and (max-width: 768px) {
   .project__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: salmon;
   }
-}
-@media screen and (min-width: 992px) {
-  .project__container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-}
-@media screen and (min-width: 1170px) {
-  .project__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 3rem 3rem;
-    grid-auto-flow: row;
-    grid-template-areas: "item__01 item__02 item__02" "item__01 item__03 item__04" "item__05 item__06 item__04";
+  .project__item {
+    flex: 1;
   }
 }
 .project__item {
@@ -1179,9 +1188,9 @@ body.remove-scroll {
   color: #848484;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 426px) {
   .contact h1 {
-    font-size: 1.4rem;
+    font-size: 3vw;
   }
   .contact p {
     font-size: 3rem;
@@ -1239,13 +1248,14 @@ body.remove-scroll {
   }
 }
 nav {
-  background-image: url("/public/assets/images/background/banner.png");
-  background-position: center;
-  background-size: cover;
-  width: 100%;
+  width: 100vw;
   transition: all 0.5s;
   z-index: 101;
   height: 50px;
+  overflow-y: hidden;
+  background-image: url("/public/assets/images/background/banner.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .fixed-nav {
@@ -1353,4 +1363,14 @@ nav a {
   color: #f9f9f9 !important;
   transition: all 0.2s;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 426px) {
+  nav li.brand {
+    display: none;
+  }
+  nav li {
+    flex: 1;
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */

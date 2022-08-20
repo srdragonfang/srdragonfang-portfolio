@@ -1,11 +1,12 @@
 @use '../global/' as g;
 
 nav {
-    @include g.background-art;
-	width: 100%;
+    width: 100vw;
 	transition: all 0.5s;
 	z-index: 101;
 	height: 50px;
+    overflow-y: hidden;
+	@include g.background-art;
 }
 
 .fixed-nav {
@@ -96,4 +97,14 @@ nav a {
 	color: #f9f9f9 !important;
 	transition: all 0.2s;
 	text-transform: uppercase;
+}
+
+@media screen and (max-width: 426px) {
+	nav li.brand {
+		display: none;
+	}
+    nav li {
+        flex: 1;
+        font-size: 2rem;
+    }
 }
