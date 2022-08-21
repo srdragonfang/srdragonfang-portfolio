@@ -18,6 +18,7 @@
 .introduce__content {
 	flex: 0.6;
 	padding: 5rem 0;
+    gap: 1rem;
 	@include g.flex-col(flex-start);
 	text-align: left;
 	// background: brown;

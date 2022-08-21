@@ -1,10 +1,12 @@
 import React from 'react';
 import { SkillsData } from './SkillsData';
 const Skill = () => {
+	const [show, setShow] = React.useState(false);
 	const skillList = React.useRef();
 	const toggleSkills = () => {
+		setShow(!show);
 		skillList.current.classList.toggle('view__skills');
-    }
+	};
 
 	return (
 		<div className='section skills' id='skills-id'>
@@ -28,12 +30,15 @@ const Skill = () => {
 						);
 					})}
 				</div>
-				<div
-					className='card__button'
-					onClick={toggleSkills}
-				>
-					View Skills
-				</div>
+				{show ? (
+					<div className='card__button' onClick={toggleSkills}>
+						Close
+					</div>
+				) : (
+					<div className='card__button' onClick={toggleSkills}>
+						View Skills
+					</div>
+				)}
 			</div>
 		</div>
 	);

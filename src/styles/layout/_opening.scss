@@ -11,7 +11,7 @@
 	// text-shadow: 4px 10px rgba(6, 141, 154, 0.427);
 	position: relative;
     z-index: 1001;
-    @include g.bg-matrix;
+    // @include g.bg-matrix;
 	& span {
 		font: fonts.$font-martrix;
 		font-size: 5rem;
