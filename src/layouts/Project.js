@@ -55,68 +55,51 @@ const Project = () => {
 				{show &&
 					state.map((item, index) => {
 						return (
-							<div className='project__modal' key={index}>
-								<div className='project__modal--bg'>
-									<div className='project__bar'>
+							<div className='modal' key={index}>
+								<div className='modal__container'>
+									<div className='modal__container--bar'>
 										<RiCloseLine
 											size={27}
 											onClick={() => setShow(false)}
 										/>
 									</div>
-									<div className='project__details'>
-										<img
-											className='project__details--img'
-											src={item.mobilePath}
-											alt='movieItem__cover'
-										/>
-										<div className='item__info'>
-											<div className='item__info--title'>
-												<span className='atomicSlashes'>
-													<GiAtomicSlashes
-														size={30}
-													/>
-												</span>
-												<p>{item.title}</p>
-											</div>
-											<div className='item__info--subtitle'>
-												{item.subtitle}
-											</div>
-
-											<div className='item__info--description'>
-												{item.languages}
-											</div>
+									<div className='modal__container--data'>
+										<div className='modal__item'>
+											<h2>{item.title}</h2>
+											<p>{item.subtitle}</p>
+											<p>{item.languages}</p>
 											<p>
-												<strong>Responsive:</strong>{' '}
-												Suitable for large width devices{' '}
+												<strong>Responsive:</strong>
+												Suitable for large width devices
 												<strong>
 													{item.responsive}
 												</strong>
 											</p>
 											<p>
-												<strong>Deploy</strong>:{' '}
+												<strong>Deploy</strong>:
 												{item.deploy}
 											</p>
-											<div className='item__info--buttons'>
+											<div className='modal__item--buttons'>
 												<a
-													className='btn btn__primary btn-effect-1'
 													href={item.previewURL}
 													target='_blank'
 													rel='noreferrer'
+													className='btn__secondary'
 												>
 													<span>Preview</span>
 													<AiOutlineExport
-														size={27}
+														size={30}
 													/>
 												</a>
 												<a
-													className='btn btn__primary btn-effect-1'
 													href={item.sourceURL}
 													target='_blank'
 													rel='noreferrer'
+													className='btn__secondary'
 												>
 													<span>Source Code</span>
 													<AiOutlineExport
-														size={27}
+														size={30}
 													/>
 												</a>
 											</div>

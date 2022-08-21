@@ -215,8 +215,8 @@
 
 	.card {
         		// box
-		width: 160px;
-		height: 160px;
+		width: 150px;
+		height: 150px;
 		padding: 3rem 1rem;
 		box-shadow: -1rem 0 3rem #000;
 		gap: 1rem;
@@ -231,7 +231,7 @@
 			font-size: 4rem;
 		}
 
-        &____button {
+        &__button {
             display: none;
         }
 
@@ -254,10 +254,11 @@
 }
 .view__skills {
 	width: 100%;
-	@include g.flex-row(space-between);
+	@include g.flex-row(space-around);
 	flex-wrap: wrap !important;
-	gap: 3rem;
-	padding: 3rem 1rem;
+	gap: 1.5rem;
+	
+    padding: 3rem 1rem;
 
 	.card {
 		&:not(:first-child) {

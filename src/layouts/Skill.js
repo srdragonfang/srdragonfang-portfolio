@@ -2,10 +2,10 @@ import React from 'react';
 import { SkillsData } from './SkillsData';
 const Skill = () => {
 	const skillList = React.useRef();
-	console.log(skillList);
 	const toggleSkills = () => {
 		skillList.current.classList.toggle('view__skills');
-	};
+    }
+
 	return (
 		<div className='section skills' id='skills-id'>
 			<div className='section__title'>

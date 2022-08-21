@@ -116,7 +116,7 @@
 
 @media screen and (max-width: 768px) {
 	.authorController {
-		height: max-content !important;
+		height: 120px;
 		position: fixed;
 		right: 0;
 		left: 0;
@@ -126,19 +126,21 @@
 		z-index: 101;
 
 		& .avatar__inner {
-			width: 60px;
-			height: 60px;
+			// width: 60px;
+			// height: 60px;
 			overflow: hidden;
+            filter:brightness(3px);
+
 			& img {
-				// display: none;
-				width: 100px;
-				height: 100px;
-				padding: 7px;
-				position: relative;
-				bottom: 20px;
-				right: 20px;
-				object-fit: cover;
-				transform: rotate(-45deg);
+				display: none;
+				// width: 100px;
+				// height: 100px;
+				// padding: 7px;
+				// position: relative;
+				// bottom: 20px;
+				// right: 20px;
+				// object-fit: cover;
+				// transform: rotate(-45deg);
 			}
 		}
 		.controller__bar--button {

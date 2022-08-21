@@ -5,8 +5,6 @@
 /* -------------------------------------------------------------------------- */
 .btn-effect-1 {
 	position: relative;
-	width: 100%;
-	height: 100%;
 	transition: 0.5s;
 	z-index: 1;
 
@@ -37,11 +35,10 @@
 
 @media screen and (max-width: 768px) {
 	.btn {
-		padding: 1rem;
+		padding: 1rem !important;
 	}
 }
 .btn {
-	padding: 2rem;
 	background-color: transparent;
 	cursor: pointer;
 
@@ -71,7 +68,8 @@
 	}
 }
 .btn__primary {
-	width: 160px;
+    padding: 2rem;
+    width: 160px;
 	height: 80px;
 	text-decoration: underline;
 	border: 3px solid #191919 !important;
@@ -79,6 +77,17 @@
 	margin: 0.5rem;
 	font-weight: 600;
 	@include g.flex-col(center);
+}
+
+.btn__secondary {
+    gap: 1rem;
+	@include g.flexbox(row, center, flex-start);
+
+    &:hover {
+        text-decoration: underline;
+        transform: translateX(5px);
+        transition: all 1s linear;
+    }
 }
 
 .btn__skill {

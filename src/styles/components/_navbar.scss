@@ -8,7 +8,7 @@ nav {
 	@include g.background-art;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     nav {
         display: none;
     }

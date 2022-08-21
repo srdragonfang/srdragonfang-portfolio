@@ -1,8 +1,6 @@
 @use '../global/' as g;
 /* --------------------------- portfolio > project -------------------------- */
 .project {
-	// // @include g.bg-matrix;
-	// height: max-content !important;
 	&__list--row {
 		gap: 1rem;
 		@include g.flex-row(center);
