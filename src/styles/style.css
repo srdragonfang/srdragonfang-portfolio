@@ -1780,4 +1780,56 @@ nav a {
   to {
     transform: translateY(-100px);
   }
+}
+.scrollDown {
+  position: fixed;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.scrollDown__icon:first-child {
+  -webkit-animation: twikle 1s infinite;
+          animation: twikle 1s infinite;
+}
+.scrollDown__icon:not(:first-child) {
+  opacity: 0;
+  -webkit-animation: twikle 1s infinite;
+          animation: twikle 1s infinite;
+}
+.scrollDown__icon:nth-child(2) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+.scrollDown__icon:nth-child(3) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.scrollDown__icon:nth-child(4) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+@-webkit-keyframes twikle {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes twikle {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+.scrollHide {
+  display: none !important;
 }/*# sourceMappingURL=style.css.map */

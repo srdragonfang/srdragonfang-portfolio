@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import NavbarMobile from '../components/NavbarMobile';
 import Opening from '../components/Opening';
+import ScrollDown from '../components/ScrollDown';
 // import Banner from '../layouts/Banner';
 import Introduce from '../layouts/Introduce';
 import Project from '../layouts/Project';
@@ -72,6 +73,7 @@ const Portfolio = () => {
 				// sectionRef={opening}
 				// scrollIndicatorHidden={scrollIndicatorHidden}
 			/>
+            <ScrollDown />
 			<Navbar />
 			<Introduce
 				// sectionRef={introduce}
