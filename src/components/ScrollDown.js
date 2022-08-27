@@ -5,7 +5,8 @@ function ScrollDown() {
 	const [hide, setHide] = React.useState(false);
 
 	window.addEventListener('scroll', () => {
-		if (window.scrollY > 50) {
+
+        if (window.scrollY > 50) {
 			setHide(true);
 		} else {
 			setHide(false);
@@ -14,10 +15,10 @@ function ScrollDown() {
 
 	return (
 		<div className={`scrollDown ${hide && 'scrollHide'}`}>
-			<BsMouse className='scrollDown__icon' size={30} color='#191919' />
-			<AiOutlineDown className='scrollDown__icon' color='#191919' />
-			<AiOutlineDown className='scrollDown__icon' color='#191919' />
-			<AiOutlineDown className='scrollDown__icon' color='#191919' />
+			<BsMouse className='scrollDown__icon' size={30} color='#daa520' />
+			<AiOutlineDown className='scrollDown__icon' color='#daa520' />
+			<AiOutlineDown className='scrollDown__icon' color='#daa520' />
+			<AiOutlineDown className='scrollDown__icon' color='#daa520' />
 		</div>
 	);
 }

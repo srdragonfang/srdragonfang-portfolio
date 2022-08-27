@@ -18,3 +18,7 @@ code {
     initial-value: 132deg;
     inherits: false;
   }
+
+.App {
+    cursor: url(./FigmaCursor.png), auto;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
+import Banner from '../components/Banner';
 import Navbar from '../components/Navbar';
 import NavbarMobile from '../components/NavbarMobile';
-import Opening from '../components/Opening';
 import ScrollDown from '../components/ScrollDown';
 // import Banner from '../layouts/Banner';
 import Introduce from '../layouts/Introduce';
@@ -9,7 +9,6 @@ import Project from '../layouts/Project';
 import ProjectPlus from '../layouts/ProjectPlus';
 import Skill from '../layouts/Skill';
 import Footer from './Footer';
-
 const Portfolio = () => {
 	// const [visibleSections, setVisibleSections] = React.useState([]);
 	// const [scrollIndicatorHidden, setScrollIndicatorHidden] =
@@ -69,32 +68,33 @@ const Portfolio = () => {
 	// }, [visibleSections]);
 	return (
 		<div className='portfolio'>
-			<Opening
-				// sectionRef={opening}
-				// scrollIndicatorHidden={scrollIndicatorHidden}
+			<Banner
+			// sectionRef={opening}
+			// scrollIndicatorHidden={scrollIndicatorHidden}
 			/>
-            <ScrollDown />
+			<ScrollDown />
 			<Navbar />
 			<Introduce
-				// sectionRef={introduce}
-				// visible={visibleSections.includes(introduce.current)}
+			// sectionRef={introduce}
+			// visible={visibleSections.includes(introduce.current)}
 			/>
+
 			<Skill
-				// sectionRef={skill}
-				// visible={visibleSections.includes(skill.current)}
+			// sectionRef={skill}
+			// visible={visibleSections.includes(skill.current)}
 			/>
 			<Project
-				// sectionRef={project}
-				// visible={visibleSections.includes(project.current)}
+			// sectionRef={project}
+			// visible={visibleSections.includes(project.current)}
 			/>
 			<ProjectPlus
-				// sectionRef={projectplus}
-				// visible={visibleSections.includes(projectplus.current)}
+			// sectionRef={projectplus}
+			// visible={visibleSections.includes(projectplus.current)}
 			/>
 			<NavbarMobile />
 			<Footer
-				// sectionRef={footer}
-				// visible={visibleSections.includes(footer.current)}
+			// sectionRef={footer}
+			// visible={visibleSections.includes(footer.current)}
 			/>
 		</div>
 	);
