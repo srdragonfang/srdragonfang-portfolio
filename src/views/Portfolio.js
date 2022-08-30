@@ -7,6 +7,7 @@ import ScrollDown from '../components/ScrollDown';
 import Introduce from '../layouts/Introduce';
 import Project from '../layouts/Project';
 import ProjectPlus from '../layouts/ProjectPlus';
+import Quote from '../layouts/Quote';
 import Skill from '../layouts/Skill';
 import Footer from './Footer';
 const Portfolio = () => {
@@ -78,7 +79,7 @@ const Portfolio = () => {
 			// sectionRef={introduce}
 			// visible={visibleSections.includes(introduce.current)}
 			/>
-
+            <Quote />
 			<Skill
 			// sectionRef={skill}
 			// visible={visibleSections.includes(skill.current)}

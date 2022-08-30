@@ -1,96 +1,85 @@
 @use '../global/' as g;
-
+@use '../util/' as u;
 .introduce {
+	margin-top: 15rem;
+
 	&__container {
-		padding: 0 10rem 3rem;
+		padding: 0 3rem 3rem;
 		width: 100%;
 		height: 100%;
-		@include g.flex-row(none);
-		// display: grid;
-	}
+		gap: 5rem;
+		@include g.flex-row(space-between);
+        
+		&--right {
+            flex: 0.6;
 
-	&__images {
-		flex: 0.4;
-		@include g.flex-col(center);
-		// #test-background
-	}
-}
-.introduce__content {
-	flex: 0.6;
-	padding: 5rem 0;
-    gap: 1rem;
-	@include g.flex-col(flex-start);
-	text-align: left;
-	// background: brown;
-	font-size: 2.4rem;
+        }
 
-	& p {
-		width: 100%;
-		font-weight: 400;
-		& span {
-			padding: 0.5rem;
-			text-shadow: 1px 5px 25px #daa520,
-				1px -5px 15px #daa520;
+		&--left {
+			flex: 0.6;
+			padding: 5rem 0;
+			gap: 1rem;
+			@include g.flex-col(flex-start);
+			text-align: left;
+
+
+			& p {
+				width: 100%;
+				font-weight: 400;
+
+				& span {
+                    font: u.$font-martrix;
+                    text-shadow: g.$text-shadow-dark;
+                
+                    font-size: 3rem;
+                    // color: #e4ebf5;
+					padding: 0.5rem;
+					// text-shadow: 1px 5px 25px #daa520, 1px -5px 15px #daa520;
+				}
+
+				& a {
+					padding: 0.5rem;
+					text-shadow: 1px 5px 25px rgb(0, 255, 0),
+						1px -5px 15px rgb(0, 255, 0);
+				}
+			}
 		}
-
-		& a {
-			padding: 0.5rem;
-			text-shadow: 1px 5px 25px rgb(0, 255, 0),
-				1px -5px 15px rgb(0, 255, 0);
-		}
 	}
-}
-.introduce__img {
-	@include g.flex-row(center);
-}
-.introduce__img--outer {
-	// width: 20px;
-	// height: 100%;
-	border: 3px solid #191919;
-	cursor: pointer;
-	padding: 0.5rem;
-}
-.introduce__img--inner {
-	width: 60px;
-	height: 500px;
-	text-align: center;
-	border: 3px solid #191919;
-	white-space: wrap;
-	writing-mode: horizontal-tb;
-}
 
-.introduce__img--inner img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.introduce__img--outer:hover img {
-	transform: scale(1.2);
-	transition: 3s linear;
+	
 }
 
 @media screen and (max-width: 768px) {
 	.introduce {
-		// padding: 5rem;
 		height: max-content !important;
-		// @include g.flexbox(col));
+
 		&__container {
 			padding: 5rem 3rem;
 			width: 100%;
 			height: 100%;
 			@include g.flex-col(none);
-			// display: grid;
-		}
 
-		&__images {
-			flex: 1;
-			@include g.flex-col(center);
-			// #test-background
+			&--left {
+				font-size: 2rem !important;
+				flex: 1;
+				padding: 5rem 0;
+			}
 		}
 	}
-	.introduce__content {
-		flex: 1;
-		padding: 5rem 0;
-	}
+}
+
+.section__quote {
+    margin: 0 0 15rem ;
+    padding: 3rem 0;
+    background-color: #16131c;
+    gap: 1rem;
+    @include g.flex-col(center);
+    color: rgb(210, 246, 218);
+    text-shadow: 1px 5px 25px #daa520, 1px -5px 15px #daa520;
+
+    & > span {
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+    }
 }

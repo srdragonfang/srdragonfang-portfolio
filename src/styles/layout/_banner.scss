@@ -21,12 +21,35 @@
 		top: 50%;
 		right: 10rem;
 		transform: translateY(-50%);
+		@include g.flexbox(column, flex-end, center);
 
 		& h1,
 		& p {
 			color: rgb(210, 246, 218);
-			text-shadow: 1px 5px 25px  #daa520,
-				1px -5px 15px #daa520;
+			text-shadow: 1px 5px 25px #daa520, 1px -5px 15px #daa520;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.banner {
+		background-image: url('../assets/images/bg-2.JPG');
+
+		& video {
+			display: none;
+		}
+
+		&__right {
+			flex: 1;
+			position: static;
+			@include g.flex-col(center);
+
+			& h1 {
+				font-size: 3rem;
+			}
+			& p {
+				display: none;
+			}
 		}
 	}
 }

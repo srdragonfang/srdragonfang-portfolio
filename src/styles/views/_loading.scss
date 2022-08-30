@@ -7,8 +7,7 @@
 	padding: 7rem 0;
 	background-image: url('../assets/images/bg-2.JPG');
 	color: #daa520;
-	// font-family: $font-body;
-	transition: all 3s linear;
+
     gap: 3rem;
 	@include g.flex-col(center);
 

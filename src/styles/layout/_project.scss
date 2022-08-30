@@ -10,7 +10,6 @@ body.remove-scroll {
 		padding: 0rem;
 		border: 5px solid black;
 		cursor: pointer;
-		// @include g.center-center;
 
 		& .dark {
 			color: #f9f9f9;
@@ -94,8 +93,7 @@ body.remove-scroll {
 			gap: 3rem;
 		}
 		&__item {
-			width: 90vw;
-			height: calc(90vw);
+			flex: 1;
 		}
 	}
 }

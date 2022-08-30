@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 const Loading = () => {
 	return (
 		<div className='loading'>
-			<h1>PORTFOLIO</h1>
-			<h1>S.R Dragonfang</h1>
 			<div className='loading--icon'>
 				<Link to='/portfolio'>
 					<div className='loading__symbol'>
