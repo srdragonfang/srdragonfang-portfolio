@@ -79,11 +79,13 @@ const Portfolio = () => {
 			// sectionRef={introduce}
 			// visible={visibleSections.includes(introduce.current)}
 			/>
-            <Quote />
+            <Quote quote="For my part I know nothing with any certainty, but the sight of
+            the stars make me dream." author="Vincent Willem van Goghs" />
 			<Skill
 			// sectionRef={skill}
 			// visible={visibleSections.includes(skill.current)}
 			/>
+            <Quote quote="It is good to love many things, for therein lies the true strength, and whosoever loves much performs much, and can accomplish much, and what is done in love is well done." author="Vincent Willem van Goghs" />
 			<Project
 			// sectionRef={project}
 			// visible={visibleSections.includes(project.current)}
@@ -92,6 +94,7 @@ const Portfolio = () => {
 			// sectionRef={projectplus}
 			// visible={visibleSections.includes(projectplus.current)}
 			/>
+            <Quote quote="I put my heart and soul into my work, and I have lost my mind in the process." author="Vincent Willem van Goghs" />
 			<NavbarMobile />
 			<Footer
 			// sectionRef={footer}

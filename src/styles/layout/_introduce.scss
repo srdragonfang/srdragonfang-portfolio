@@ -77,6 +77,10 @@
     color: rgb(210, 246, 218);
     text-shadow: 1px 5px 25px #daa520, 1px -5px 15px #daa520;
 
+    & > p {
+        width: 80%;
+        text-align: center;
+    }
     & > span {
         font-weight: 600;
         width: 100%;

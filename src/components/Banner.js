@@ -4,7 +4,7 @@ import myVideo from './myVideo.mp4';
 function Banner() {
 	return (
 		<div className='banner'>
-			<video autoPlay loop>
+			<video autoPlay loop >
 				<source src={myVideo} type='video/mp4'></source>
 			</video>
 			<div className='banner__right'>
