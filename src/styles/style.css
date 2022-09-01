@@ -1110,9 +1110,9 @@ sup {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: auto;
   }
   .card:hover:before,
 .card:hover:after {

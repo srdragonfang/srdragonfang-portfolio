@@ -190,9 +190,9 @@
 
 @media screen and (max-width: 768px) {
 	.skills__container--list {
-		@include g.flex-row(space-between);
+		@include g.flex-row(space-around);
 		flex-wrap: wrap;
-		gap: 1rem;
+		gap: auto;
 	}
 
 
