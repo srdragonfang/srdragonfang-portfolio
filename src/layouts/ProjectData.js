@@ -9,8 +9,8 @@ export const ProjectsData = [
         deploy: "Firebase",
         laptopPath: "../assets/images/products/portfolio.png",
         mobilePath: "../assets/images/products/portfolio.png",
-        previewURL: "https://srdf-portfolio.web.app/",
-        sourceURL: "https://github.com/srdragonfang/React-Porfolio"
+        previewURL: "https://srdragonfang-portfolio.web.app/portfolio",
+        sourceURL: "https://github.com/srdragonfang/srdragonfang-portfolio"
     },
     {
         key: 2,
