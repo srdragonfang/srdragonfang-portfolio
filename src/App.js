@@ -1,5 +1,5 @@
 // styles
-import './styles/style.css';
+import './dist/style.css';
 // views
 import Portfolio from './views/Portfolio';
 import Loading from './views/Loading';

@@ -6,6 +6,7 @@ body.remove-scroll {
 
 .project {
 	@include g.flex-col(flex-start);
+
 	&__item {
 		padding: 0rem;
 		border: 5px solid black;
@@ -16,10 +17,10 @@ body.remove-scroll {
 		}
 
 		&--info {
+			display: none;
 			width: 100%;
 			height: 100%;
-			@include g.flex-col(center);
-			gap: 3rem;
+
 
 			& h2 {
 				display: block;
@@ -35,9 +36,13 @@ body.remove-scroll {
 			padding: 1rem;
 			transition: all 1s linear;
 		}
+
 		&:hover .project__item--info {
+			@include g.flex-col(center);
+			gap: 3rem;
 			@include g.background-art;
 		}
+
 		&:hover h2 {
 			color: #f9f9f9;
 		}
@@ -45,45 +50,46 @@ body.remove-scroll {
 }
 
 .project {
-    &__container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 3rem 3rem;
-        grid-auto-flow: row;
-        grid-template-areas:
-            'item__01 item__02 item__02'
-            'item__01 item__03 item__04'
-            'item__05 item__06 item__04';
-    }
+	&__container {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 3rem 3rem;
+		grid-auto-flow: row;
+		grid-template-areas:
+			'item__01 item__02 item__02'
+			'item__01 item__03 item__04'
+			'item__05 item__06 item__04';
+	}
 }
 
 .project__item {
-    min-height: 280px;
+	min-height: 280px;
 }
+
 .project__item:nth-child(1) {
-    grid-area: item__01;
+	grid-area: item__01;
 }
 
 .project__item:nth-child(2) {
-    grid-area: item__02;
+	grid-area: item__02;
 }
 
 .project__item:nth-child(3) {
-    grid-area: item__03;
+	grid-area: item__03;
 }
 
 .project__item:nth-child(4) {
-    grid-area: item__04;
+	grid-area: item__04;
 }
 
 .project__item:nth-child(5) {
-    grid-area: item__05;
+	grid-area: item__05;
 }
 
 .project__item:nth-child(6) {
-    grid-area: item__06;
+	grid-area: item__06;
 }
 
 @media screen and (max-width: 768px) {
@@ -92,11 +98,13 @@ body.remove-scroll {
 			@include g.flexbox(column, center, flex-start);
 			gap: 3rem;
 		}
+
 		&__item {
 			flex: 1;
 		}
 	}
 }
+
 @media screen and (max-width: 1024px) {
 	.project {
 		.project__container {
@@ -105,6 +113,7 @@ body.remove-scroll {
 			flex-wrap: wrap;
 			gap: 3rem;
 		}
+
 		&__item {
 			width: 40vw;
 			height: calc(40vw);

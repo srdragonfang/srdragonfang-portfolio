@@ -17,7 +17,7 @@ export const ProjectsData = [
         title: "Sokunmaru | Desk",
         subtitle: "MusicPlayer App, Clock App, Todo App, Note App, Kanban App",
         background: "dark",
-        languages: "ReactJS, SCSS, API",
+        languages: "HTML, SCSS, API",
         responsive: "1024px",
         deploy: "Firebase",
         laptopPath: "../assets/images/products/sokunmaru-desk.png",
@@ -27,8 +27,8 @@ export const ProjectsData = [
     },
     {
         key: 3,
-        title: "Clone | Gmail",
-        subtitle: "Form Validate",
+        title: "Unknown",
+        subtitle: "Unknow",
         background: "",
         languages: "HTML5, CSS3, Javascript",
         responsive: "375px",
@@ -66,7 +66,7 @@ export const ProjectsData = [
     },
     {
         key: 6,
-        title: "Form | Validate",
+        title: "Nah",
         subtitle: "Form Validate",
         background: "",
         languages: "HTML5, CSS3, Javascript",
@@ -102,18 +102,6 @@ export const ProjectsData = [
         mobilePath: "../assets/images/products/coffee-shop-mobile.png",
         previewURL: "https://sokunmaru-coffeshop.netlify.app",
         sourceURL: "https://github.com/srdragonfang/sokunmaru-coffeeShop"
-    },
-    {
-        key: 9,
-        title: "Sokunmaru | Counter App",
-        subtitle: "Class Function",
-        background: "",
-        languages: "HTML5, CSS3, Javascript",
-        responsive: "375px",
-        deploy: "Netlify",
-        laptopPath: "../assets/images/products/form-validate-laptop.png",
-        mobilePath: "../assets/images/products/form-validate-laptop.png",
-        previewURL: "https://sokunmaru-validate.netlify.app/",
-        sourceURL: "https://github.com/srdragonfang/form-validate"
     }
+
 ]

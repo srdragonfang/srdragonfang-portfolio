@@ -69,14 +69,15 @@ const Project = () => {
 											<p>{item.subtitle}</p>
 											<p>{item.languages}</p>
 											<p>
-												<strong>Responsive:</strong>
+												<strong>Responsive: </strong>
 												Suitable for large width devices
+												<span> </span>
 												<strong>
-													{item.responsive}
+													 {item.responsive}
 												</strong>
 											</p>
 											<p>
-												<strong>Deploy</strong>:
+												<strong>Deploy: </strong>
 												{item.deploy}
 											</p>
 											<div className='modal__item--buttons'>

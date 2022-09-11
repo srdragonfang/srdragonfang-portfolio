@@ -34,7 +34,8 @@
 
 	&__symbol {
 		width: 100%;
-		@include g.center-center;
+		@include g.flex-col(flex-start);
+		gap: 1rem;
 		&--square {
 			width: 100px;
 			height: 100px;

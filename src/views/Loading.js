@@ -13,6 +13,7 @@ const Loading = () => {
 								<IoMdFingerPrint color='#daa520' size={60} />
 							</div>
 						</div>
+						<p>Enter</p>
 					</div>
 				</Link>
 			</div>
