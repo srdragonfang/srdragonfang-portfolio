@@ -4,6 +4,7 @@
 	position: relative;
 	width: 100vw;
 	height: 100vh;
+    @include g.bg-matrix;
 	@include g.flex-row(flex-end);
 
 	& p {

@@ -1,0 +1,78 @@
+@use '../global/' as g;
+
+.art {
+	width: 100%;
+	height: 100%;
+	@include g.flex-col(flex-start);
+
+	& .avatar__outter {
+		margin: -3rem;
+		width: 160px;
+		height: 160px;
+		border-top: 5px solid #daa520;
+		border-right: 4px solid #daa520;
+		border-bottom: 3px solid #daa520;
+		border-left: 2px solid #daa520;
+		transform: rotate(45deg);
+		@include g.bg-matrix;
+		// background: #b7c7fc;
+		@include g.flex-row(center);
+	}
+	& .avatar__inner {
+		background-color: #b7c7fc;
+		width: 60px;
+		height: 60px;
+		border-top: 5px solid #daa520;
+		border-right: 4px solid #daa520;
+		border-bottom: 3px solid #daa520;
+		border-left: 2px solid #daa520;
+	}
+
+	& .cycle__top {
+		border-top: 5px solid #daa520;
+		border-right: 3px solid #daa520;
+		border-bottom: 1px solid #daa520;
+		border-left: 1px solid #daa520;
+		@include g.flex-col(flex-start);
+	}
+
+	& .cycle__bottom {
+		border-top: 1px solid #daa520;
+		border-right: 1px solid #daa520;
+		border-bottom: 5px solid #daa520;
+		border-left: 3px solid #daa520;
+		@include g.flex-col(flex-end);
+	}
+
+	&__cycle {
+		&--outer {
+			width: 140px;
+			height: 140px;
+			border-radius: 50%;
+		}
+
+		&--inner {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			border-top: 5px solid #daa520;
+			border-right: 4px solid #daa520;
+			border-bottom: 3px solid #daa520;
+			border-left: 2px solid #daa520;
+			@include g.bg-matrix;
+		}
+	}
+
+	&__point {
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: #daa520;
+	}
+
+	&__line {
+		width: 3px;
+		height: 100px;
+		background: #daa520;
+	}
+}

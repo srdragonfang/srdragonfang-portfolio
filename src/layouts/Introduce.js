@@ -1,8 +1,6 @@
 import React from 'react';
 
 const Introduce = () => {
-
-
 	return (
 		<div className='section introduce' id='introduce-id'>
 			<div className='section__title'>
@@ -13,7 +11,8 @@ const Introduce = () => {
 			<div className='introduce__container'>
 				<div className='introduce__container--left'>
 					<p>
-						Hi. I'm <span>S.R Dragonfang</span>, who is a <span>Front-end Developer</span>
+						Hi. I'm <span>S.R Dragonfang</span>, who is a{' '}
+						<span>Front-end Developer</span>
 						based in <span>Viet Nam</span>!
 					</p>
 					<p>
@@ -28,13 +27,33 @@ const Introduce = () => {
 						to receive your comments.
 					</p>
 					<p>
-						When not online, I <span>loves</span> to reading <span>non-fiction novel</span>,
-						<span>writting</span>.
+						When not online, I <span>loves</span> to reading{' '}
+						<span>non-fiction novel</span>,<span>writting</span>.
 					</p>
 					<p>Thank you for taking the time to visit my Portfolio.</p>
 					<p>Wish you a good day.</p>
 				</div>
-				<div className='introduce__container--right'></div>
+				<div className='introduce__container--right'>
+					<div className='art'>
+						<div className='art__point'></div>
+						<div className='art__line'></div>
+						<div className='art__cycle--outer cycle__top'>
+							<div className='art__cycle--inner cycle__top'>
+								<div className='art__point'></div>
+							</div>
+						</div>
+						<div className='avatar__outter'>
+							<div className='avatar__inner'></div>
+						</div>
+						<div className='art__cycle--outer cycle__bottom'>
+							<div className='art__cycle--inner cycle__bottom'>
+								<div className='art__point'></div>
+							</div>
+						</div>
+						<div className='art__line'></div>
+						<div className='art__point'></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

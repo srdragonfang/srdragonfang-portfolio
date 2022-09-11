@@ -73,7 +73,7 @@ const Project = () => {
 												Suitable for large width devices
 												<span> </span>
 												<strong>
-													 {item.responsive}
+													{item.responsive}
 												</strong>
 											</p>
 											<p>

@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Quote = ({quote, author}) => {
+const Quote = ({ quote, author }) => {
 	return (
 		<div className='section__quote'>
-			<p>
-				"{quote}"
-			</p>
-			<span>{author}</span>
+			<div className='section__quote--container'>
+				<p>"{quote}"</p>
+				<span>{author}</span>
+			</div>
 		</div>
 	);
 };
