@@ -9,10 +9,10 @@
 		margin: -3rem;
 		width: 160px;
 		height: 160px;
-		border-top: 5px solid #daa520;
-		border-right: 4px solid #daa520;
-		border-bottom: 3px solid #daa520;
-		border-left: 2px solid #daa520;
+		border-top: 5px solid #191919;
+		border-right: 4px solid #191919;
+		border-bottom: 3px solid #191919;
+		border-left: 2px solid #191919;
 		transform: rotate(45deg);
 		@include g.bg-matrix;
 		// background: #b7c7fc;
@@ -22,25 +22,25 @@
 		background-color: #b7c7fc;
 		width: 60px;
 		height: 60px;
-		border-top: 5px solid #daa520;
-		border-right: 4px solid #daa520;
-		border-bottom: 3px solid #daa520;
-		border-left: 2px solid #daa520;
+		border-top: 5px solid #191919;
+		border-right: 4px solid #191919;
+		border-bottom: 3px solid #191919;
+		border-left: 2px solid #191919;
 	}
 
 	& .cycle__top {
-		border-top: 5px solid #daa520;
-		border-right: 3px solid #daa520;
-		border-bottom: 1px solid #daa520;
-		border-left: 1px solid #daa520;
+		border-top: 5px solid #191919;
+		border-right: 3px solid #191919;
+		border-bottom: 1px solid #191919;
+		border-left: 1px solid #191919;
 		@include g.flex-col(flex-start);
 	}
 
 	& .cycle__bottom {
-		border-top: 1px solid #daa520;
-		border-right: 1px solid #daa520;
-		border-bottom: 5px solid #daa520;
-		border-left: 3px solid #daa520;
+		border-top: 1px solid #191919;
+		border-right: 1px solid #191919;
+		border-bottom: 5px solid #191919;
+		border-left: 3px solid #191919;
 		@include g.flex-col(flex-end);
 	}
 
@@ -55,10 +55,10 @@
 			width: 60px;
 			height: 60px;
 			border-radius: 50%;
-			border-top: 5px solid #daa520;
-			border-right: 4px solid #daa520;
-			border-bottom: 3px solid #daa520;
-			border-left: 2px solid #daa520;
+			border-top: 5px solid #191919;
+			border-right: 4px solid #191919;
+			border-bottom: 3px solid #191919;
+			border-left: 2px solid #191919;
 			@include g.bg-matrix;
 		}
 	}
@@ -67,12 +67,12 @@
 		width: 20px;
 		height: 20px;
 		border-radius: 50%;
-		background-color: #daa520;
+		background-color: #191919;
 	}
 
 	&__line {
 		width: 3px;
 		height: 100px;
-		background: #daa520;
+		background: #191919;
 	}
 }
