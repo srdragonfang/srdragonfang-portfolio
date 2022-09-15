@@ -10,12 +10,7 @@
 	& p {
 		font-size: 3rem;
 	}
-	& video {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		z-index: -1;
-	}
+
 
 	&__right {
 		position: absolute;
@@ -34,11 +29,7 @@
 
 @media screen and (max-width: 768px) {
 	.banner {
-		background-image: url('../assets/images/bg-2.JPG');
-
-		& video {
-			display: none;
-		}
+        z-index: 1001;
 
 		&__right {
 			flex: 1;
@@ -48,9 +39,9 @@
 			& h1 {
 				font-size: 3rem;
 			}
-			& p {
-				display: none;
-			}
+			// & p {
+			// 	display: none;
+			// }
 		}
 	}
 }

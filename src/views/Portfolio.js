@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../components/Banner';
 import Navbar from '../components/Navbar';
-import NavbarMobile from '../components/NavbarMobile';
+// import NavbarMobile from '../components/NavbarMobile';
 import ScrollDown from '../components/ScrollDown';
 // import Banner from '../layouts/Banner';
 import Introduce from '../layouts/Introduce';
@@ -95,7 +95,7 @@ const Portfolio = () => {
 			// visible={visibleSections.includes(projectplus.current)}
 			/>
             <Quote quote="I put my heart and soul into my work, and I have lost my mind in the process." author="Vincent Willem van Goghs" />
-			<NavbarMobile />
+			{/* <NavbarMobile /> */}
 			<Footer
 			// sectionRef={footer}
 			// visible={visibleSections.includes(footer.current)}

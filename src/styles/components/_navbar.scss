@@ -8,12 +8,7 @@ nav {
 	@include g.background-art;
 }
 
-@media screen and (max-width: 768px) {
-    nav {
-        display: none;
-    }
-    
-}
+
 .fixed-nav {
 	position: fixed;
 	top: 0;
@@ -49,6 +44,9 @@ nav li.brand {
 	letter-spacing: 0.175rem;
 }
 
+
+
+
 nav li.logo {
 	position: relative;
 	left: -20px;
@@ -57,6 +55,16 @@ nav li.logo {
 	overflow: hidden;
 	background: #daa520;
 	transition: all 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    nav li.brand {
+        display: none;
+    }
+
+    nav li.logo {
+        display: none;
+    }
 }
 
 nav li:not(.brand):hover {
@@ -104,12 +112,8 @@ nav a {
 	text-transform: uppercase;
 }
 
-@media screen and (max-width: 426px) {
-	nav li.brand {
-		display: none;
-	}
-    nav li {
-        flex: 1;
-        font-size: 2rem;
+@media screen and (max-width: 425px) {
+    nav {
+        display: none;
     }
 }
