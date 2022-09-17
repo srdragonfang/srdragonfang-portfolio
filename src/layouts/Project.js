@@ -103,6 +103,19 @@ const Project = () => {
 														size={30}
 													/>
 												</a>
+                                                {item.design && (
+                                                    <a
+													href={item.design}
+													target='_blank'
+													rel='noreferrer'
+													className='btn__secondary'
+												>
+													<span>Design File</span>
+													<AiOutlineExport
+														size={30}
+													/>
+												</a>
+                                                )}
 											</div>
 										</div>
 									</div>
