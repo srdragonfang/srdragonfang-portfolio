@@ -1,5 +1,5 @@
 // styles
-import "./dist/style.css"
+import "./styles/style.css"
 import Portfolio from './views/Portfolio';
 import Loading from './views/Loading';
 // react-router-dom

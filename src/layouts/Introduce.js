@@ -11,8 +11,7 @@ const Introduce = () => {
 			<div className='introduce__container'>
 				<div className='introduce__container--left'>
 					<p>
-						Hi. I'm <span>S.R Dragonfang</span>, who is a{' '}
-						<span>Front-end Developer</span>
+						Hi. I'm <span>S.R Dragonfang</span>, who is a <span>Front-end Developer</span>
 						based in <span>Viet Nam</span>!
 					</p>
 					<p>

@@ -1281,7 +1281,7 @@ body.remove-scroll {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 3rem 3rem;
     grid-auto-flow: row;
-    grid-template-areas: "item__01 item__02 item__02" "item__01 item__03 item__04" "item__05 item__06 item__04";
+    grid-template-areas: "item__01 item__02 item__02" "item__01 item__03 item__04" "item__05 item__06 item__04" "item__07 item__07 item__08";
   }
   .project__item {
     min-height: 280px;
@@ -1303,6 +1303,9 @@ body.remove-scroll {
   }
   .project__item:nth-child(6) {
     grid-area: item__06;
+  }
+  .project__item:nth-child(7) {
+    grid-area: item__07;
   }
 }
 .modal__item {

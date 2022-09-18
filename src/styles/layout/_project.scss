@@ -98,7 +98,8 @@ body.remove-scroll {
             grid-template-areas:
                 'item__01 item__02 item__02'
                 'item__01 item__03 item__04'
-                'item__05 item__06 item__04';
+                'item__05 item__06 item__04'
+                'item__07 item__07 item__08';
         }
     }
     
@@ -128,6 +129,9 @@ body.remove-scroll {
     
     .project__item:nth-child(6) {
         grid-area: item__06;
+    }
+    .project__item:nth-child(7) {
+        grid-area: item__07;
     }
 }
 
