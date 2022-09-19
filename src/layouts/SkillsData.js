@@ -60,10 +60,10 @@ export const SkillsData = [
 	//     icon: <AiFillApi />,
 	// },
 	{
-		title: 'API.Restful',
-		percent: '5%',
-		icon: <AiFillApi />,
-	},
+	// 	title: 'API.Restful',
+	// 	percent: '5%',
+	// 	icon: <AiFillApi />,
+	// },
 	{
 		title: 'RESPONSIVE WEB DESIGN',
 		percent: '21%',
