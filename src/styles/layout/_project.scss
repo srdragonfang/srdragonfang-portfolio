@@ -10,7 +10,7 @@ body.remove-scroll {
 
 	&__item {
 		padding: 0rem;
-		border: 5px solid black;
+		// border: 5px solid black;
 		cursor: pointer;
 
 		& .dark {
@@ -28,6 +28,7 @@ body.remove-scroll {
 			}
 
 			& div {
+                color: #191919;
 				background-color: #e4ebf5;
 				text-decoration: none;
 			}
@@ -39,8 +40,8 @@ body.remove-scroll {
 		}
 
 		&:hover .project__item--info {
+            gap: 3rem;
 			@include g.flex-col(center);
-			gap: 3rem;
 			@include g.background-art;
 		}
 
@@ -105,6 +106,7 @@ body.remove-scroll {
     
     .project__item {
         min-height: 280px;
+        box-shadow: -1rem 0 3rem #000;
     }
     
     .project__item:nth-child(1) {

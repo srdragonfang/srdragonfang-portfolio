@@ -67,10 +67,10 @@
 
 .btn__primary {
   padding: 2rem;
-  min-width: 160px;
+  width: 170px;
   height: 80px;
   text-decoration: underline;
-  border: 3px solid #191919 !important;
+  border: 3px solid #f9f9f9 !important;
   margin: 0.5rem;
   font-weight: 600;
   display: flex;
@@ -279,8 +279,10 @@ body {
   /** * Remove the margin in all browsers. */
   margin: 0;
   font-size: 2rem;
-  background-color: #a9c9ff;
-  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+  color: #f9f9f9;
+  background-image: url("/public/assets/images/background/banner.png");
+  background-position: center;
+  background-size: cover;
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
 }
@@ -449,7 +451,7 @@ h1 {
   line-height: 1.25;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 1px 5px 25px #191919, 1px -5px 15px #191919;
+  text-shadow: 1px 5px 25px #191919, 1px -5px 15px #f9f9f9;
 }
 
 @media screen and (max-width: 1024px) {
@@ -640,7 +642,7 @@ sup {
 }
 .btn-close {
   color: #f9f9f9;
-  background: #191919;
+  background: #f9f9f9;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -672,7 +674,7 @@ sup {
   height: 100vh;
   padding: 7rem 0;
   background-image: url("../assets/images/bg-2.JPG");
-  color: #daa520;
+  color: rgba(0, 255, 0, 0.5);
   gap: 3rem;
   display: flex;
   flex-direction: column;
@@ -688,8 +690,8 @@ sup {
 .loading-subTitle-one-line {
   width: 100px;
   height: 2vh;
-  border-top: 3px solid #daa520;
-  border-bottom: 3px solid #daa520;
+  border-top: 3px solid rgba(0, 255, 0, 0.5);
+  border-bottom: 3px solid rgba(0, 255, 0, 0.5);
 }
 .loading-subTitle-two {
   font-size: 5vh;
@@ -710,7 +712,7 @@ sup {
   height: 100px;
   padding: 0.2rem;
   transition: 2s ease-in-out;
-  border: 3px groove goldenrod;
+  border: 3px groove rgba(0, 255, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -722,7 +724,7 @@ sup {
 .loading__symbol--square:hover .loading__symbol--cycle {
   border-radius: 50%;
   transform: rotate(900deg);
-  border: 3px solid goldenrod;
+  border: 3px solid rgba(0, 255, 0, 0.5);
 }
 .loading__symbol--cycle {
   display: flex;
@@ -733,9 +735,9 @@ sup {
   padding: 0.2rem;
   -o-object-fit: cover;
      object-fit: cover;
-  color: #daa520;
+  color: rgba(0, 255, 0, 0.5);
   transition: 2s ease-in-out;
-  border: 3px groove goldenrod;
+  border: 3px groove rgba(0, 255, 0, 0.5);
 }
 
 @media screen and (max-width: 768px) {
@@ -828,7 +830,7 @@ sup {
 }
 .banner__right h1, .banner__right p {
   color: rgb(210, 246, 218);
-  text-shadow: 1px 5px 25px #daa520, 1px -5px 15px #daa520;
+  text-shadow: 1px 5px 25px rgba(0, 255, 0, 0.5), 1px -5px 15px rgba(0, 255, 0, 0.5);
 }
 
 @media screen and (max-width: 768px) {
@@ -878,7 +880,7 @@ sup {
   font-weight: 400;
 }
 .introduce__container--left p span {
-  text-shadow: 1px 5px 25px #191919, 1px -5px 15px #191919;
+  text-shadow: 1px 5px 25px #191919, 1px -5px 15px #f9f9f9;
   font-size: 2 rem;
   padding: 0.5rem;
 }
@@ -909,20 +911,24 @@ sup {
   }
 }
 .section__quote {
-  margin: 0 0 15rem;
-  padding: 3rem;
-  background-color: #17120e;
+  margin: 15rem 0 0;
   gap: 1rem;
   color: rgb(210, 246, 218);
-  text-shadow: 1px 5px 25px #daa520, 1px -5px 15px #daa520;
-}
-.section__quote--container {
-  padding: 3rem;
-  border: 0.1px solid #daa520;
+  text-shadow: 1px 5px 25px rgba(0, 255, 0, 0.5), 1px -5px 15px rgba(0, 255, 0, 0.5);
+  padding: 7rem;
+  border-top: 0.1px solid rgba(0, 255, 0, 0.5);
+  border-bottom: 0.1px solid rgba(0, 255, 0, 0.5);
   background: url("../assets/images/banner/bg03b.png") 84px -1080px no-repeat, url("../assets/images/banner/bg01b.png") 426px -1080px no-repeat, url("../assets/images/banner/bg02b.png") 730px -1080px no-repeat, url("../assets/images/banner/bg03b.png") 872px -1080px no-repeat, url("../assets/images/banner/bg02b.png") 95% -1080px no-repeat, url("../assets/images/banner/bg00.jpg") 0 0 repeat;
   background-color: #111;
   -webkit-animation: waterfall 10s linear infinite;
   animation: waterfall 10s linear infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section__quote--container {
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1009,7 +1015,7 @@ sup {
 }
 .card__icon {
   font-size: 7rem;
-  color: #daa520 !important;
+  color: rgba(0, 255, 0, 0.5) !important;
   border: none;
 }
 
@@ -1046,42 +1052,22 @@ sup {
 .card:nth-child(11) {
   margin-top: 300px;
 }
-
-.card:before,
-.card:after {
-  -webkit-animation: none;
-          animation: none;
-  opacity: 0;
+.card:nth-child(12) {
+  margin-top: 330px;
 }
-
-.card::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
+.card:nth-child(13) {
+  margin-top: 360px;
 }
-
-.card::after {
-  position: absolute;
-  content: "";
-  top: 10.8333333333vh;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  filter: blur(10.8333333333vh);
-  background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+.card:nth-child(14) {
+  margin-top: 390px;
 }
 
 .card:hover {
-  color: rgb(255, 186, 0);
-  transition: color 1s;
+  text-shadow: 1px 5px 25px rgba(0, 255, 0, 0.5), 1px -5px 15px rgba(0, 255, 0, 0.5);
+  background: url("../assets/images/banner/bg03b.png") 84px -1080px no-repeat, url("../assets/images/banner/bg01b.png") 426px -1080px no-repeat, url("../assets/images/banner/bg02b.png") 730px -1080px no-repeat, url("../assets/images/banner/bg03b.png") 872px -1080px no-repeat, url("../assets/images/banner/bg02b.png") 95% -1080px no-repeat, url("../assets/images/banner/bg00.jpg") 0 0 repeat;
+  background-color: #111;
+  -webkit-animation: waterfall 10s linear infinite;
+  animation: waterfall 10s linear infinite;
 }
 .card:hover:not(:last-child) {
   transform: translateY(-20px) translateX(-130px);
@@ -1093,22 +1079,6 @@ sup {
   transition: 0.4s ease-out;
 }
 
-.card:hover:before,
-.card:hover:after {
-  -webkit-animation: spin 2.5s linear infinite;
-          animation: spin 2.5s linear infinite;
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-
-@keyframes spin {
-  0% {
-    --rotate: 0deg;
-  }
-  100% {
-    --rotate: 360deg;
-  }
-}
 @media screen and (max-width: 768px) {
   .skills__container--list {
     display: flex;
@@ -1208,7 +1178,6 @@ body.remove-scroll {
 }
 .project__item {
   padding: 0rem;
-  border: 5px solid black;
   cursor: pointer;
 }
 .project__item .dark {
@@ -1223,6 +1192,7 @@ body.remove-scroll {
   display: block;
 }
 .project__item--info div {
+  color: #191919;
   background-color: #e4ebf5;
   text-decoration: none;
 }
@@ -1231,11 +1201,11 @@ body.remove-scroll {
   transition: all 1s linear;
 }
 .project__item:hover .project__item--info {
+  gap: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
   background-image: url("/public/assets/images/background/banner.png");
   background-position: center;
   background-size: cover;
@@ -1285,6 +1255,7 @@ body.remove-scroll {
   }
   .project__item {
     min-height: 280px;
+    box-shadow: -1rem 0 3rem #000;
   }
   .project__item:nth-child(1) {
     grid-area: item__01;
@@ -1437,7 +1408,7 @@ body.remove-scroll {
 }
 .contact h1 {
   color: rgb(210, 246, 218);
-  text-shadow: 1px 5px 25px #daa520, 1px -5px 15px #daa520;
+  text-shadow: 1px 5px 25px rgba(0, 255, 0, 0.5), 1px -5px 15px rgba(0, 255, 0, 0.5);
   text-transform: lowercase;
 }
 .contact p {
@@ -1463,7 +1434,7 @@ body.remove-scroll {
   padding: 3rem;
   font-weight: 700;
   color: rgb(210, 246, 218);
-  text-shadow: 1px 5px 25px #daa520, 1px -5px 15px #daa520;
+  text-shadow: 1px 5px 25px rgba(0, 255, 0, 0.5), 1px -5px 15px rgba(0, 255, 0, 0.5);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1510,6 +1481,7 @@ nav {
   transition: all 0.5s;
   z-index: 101;
   height: 50px;
+  box-shadow: -1rem 0 3rem #000;
   background-image: url("/public/assets/images/background/banner.png");
   background-position: center;
   background-size: cover;
@@ -1541,7 +1513,7 @@ nav li {
 nav li.brand {
   max-width: 0;
   overflow: hidden;
-  background: #daa520;
+  background-color: #17141d;
   transition: all 0.5s;
   color: #f9f9f9;
   font-weight: 700;
@@ -1555,7 +1527,7 @@ nav li.logo {
   top: 5px;
   max-width: 0;
   overflow: hidden;
-  background: #daa520;
+  background-color: #17141d;
   transition: all 0.5s;
 }
 
@@ -1580,7 +1552,7 @@ nav li:not(.brand):hover {
   height: 40px;
   border-radius: 50%;
   border-left: 20px solid #494949;
-  border-right: 20px solid #daa520;
+  border-right: 20px solid #17141d;
   background-color: #f9f9f9;
   z-index: 1;
 }
@@ -1593,30 +1565,30 @@ nav li:not(.brand):hover {
 @-webkit-keyframes moving_eye {
   0% {
     border-left: 5px solid #494949;
-    border-right: 5px solid #daa520;
+    border-right: 5px solid rgba(0, 255, 0, 0.5);
   }
   50% {
     border-left: 20px solid #494949;
-    border-right: 20px solid #daa520;
+    border-right: 20px solid rgba(0, 255, 0, 0.5);
   }
   100% {
     border-left: 5px solid #494949;
-    border-right: 5px solid #daa520;
+    border-right: 5px solid rgba(0, 255, 0, 0.5);
   }
 }
 
 @keyframes moving_eye {
   0% {
     border-left: 5px solid #494949;
-    border-right: 5px solid #daa520;
+    border-right: 5px solid rgba(0, 255, 0, 0.5);
   }
   50% {
     border-left: 20px solid #494949;
-    border-right: 20px solid #daa520;
+    border-right: 20px solid rgba(0, 255, 0, 0.5);
   }
   100% {
     border-left: 5px solid #494949;
-    border-right: 5px solid #daa520;
+    border-right: 5px solid rgba(0, 255, 0, 0.5);
   }
 }
 nav a {
@@ -1647,10 +1619,10 @@ nav a {
 .authorController .avatar__outter {
   width: 70px;
   height: 70px;
-  border-top: 5px solid #daa520;
-  border-right: 5px solid #191919;
-  border-bottom: 5px solid #191919;
-  border-left: 5px solid #daa520;
+  border-top: 5px solid rgba(0, 255, 0, 0.5);
+  border-right: 5px solid #f9f9f9;
+  border-bottom: 5px solid #f9f9f9;
+  border-left: 5px solid rgba(0, 255, 0, 0.5);
   transform: rotate(45deg);
   background-image: url("/public/assets/images/background/banner.png");
   background-position: center;
@@ -1664,10 +1636,10 @@ nav a {
   background: #e4ebf5;
   width: 30px;
   height: 30px;
-  border-top: 5px solid #191919;
-  border-right: 5px solid #daa520;
-  border-bottom: 5px solid #daa520;
-  border-left: 5px solid #191919;
+  border-top: 5px solid #f9f9f9;
+  border-right: 5px solid rgba(0, 255, 0, 0.5);
+  border-bottom: 5px solid rgba(0, 255, 0, 0.5);
+  border-left: 5px solid #f9f9f9;
 }
 .authorController img {
   display: none;
@@ -1712,10 +1684,10 @@ nav a {
   font: 350% Matrix, sans-serif;
   font-size: 2rem;
   color: rgb(210, 246, 218);
-  text-shadow: 1px 5px 25px #daa520, 1px -5px 15px #daa520;
+  text-shadow: 1px 5px 25px rgba(0, 255, 0, 0.5), 1px -5px 15px rgba(0, 255, 0, 0.5);
   font-weight: 700;
-  background: #191919;
-  border: 3px solid #daa520;
+  background: #f9f9f9;
+  border: 3px solid rgba(0, 255, 0, 0.5);
 }
 
 .controller__bar--button a {
@@ -1870,10 +1842,10 @@ nav a {
   margin: -3rem;
   width: 160px;
   height: 160px;
-  border-top: 5px solid #191919;
-  border-right: 4px solid #191919;
-  border-bottom: 3px solid #191919;
-  border-left: 2px solid #191919;
+  border-top: 5px solid #f9f9f9;
+  border-right: 4px solid #f9f9f9;
+  border-bottom: 3px solid #f9f9f9;
+  border-left: 2px solid #f9f9f9;
   transform: rotate(45deg);
   background: url("../assets/images/banner/bg03b.png") 84px -1080px no-repeat, url("../assets/images/banner/bg01b.png") 426px -1080px no-repeat, url("../assets/images/banner/bg02b.png") 730px -1080px no-repeat, url("../assets/images/banner/bg03b.png") 872px -1080px no-repeat, url("../assets/images/banner/bg02b.png") 95% -1080px no-repeat, url("../assets/images/banner/bg00.jpg") 0 0 repeat;
   background-color: #111;
@@ -1885,29 +1857,33 @@ nav a {
   justify-content: center;
 }
 .art .avatar__inner {
-  background-color: #b7c7fc;
   width: 60px;
   height: 60px;
-  border-top: 5px solid #191919;
-  border-right: 4px solid #191919;
-  border-bottom: 3px solid #191919;
-  border-left: 2px solid #191919;
+  border-top: 5px solid #f9f9f9;
+  border-right: 4px solid #f9f9f9;
+  border-bottom: 3px solid #f9f9f9;
+  border-left: 2px solid #f9f9f9;
+  transform: rotate(-90deg);
+  background: url("../assets/images/banner/bg03b.png") 84px -1080px no-repeat, url("../assets/images/banner/bg01b.png") 426px -1080px no-repeat, url("../assets/images/banner/bg02b.png") 730px -1080px no-repeat, url("../assets/images/banner/bg03b.png") 872px -1080px no-repeat, url("../assets/images/banner/bg02b.png") 95% -1080px no-repeat, url("../assets/images/banner/bg00.jpg") 0 0 repeat;
+  background-color: #111;
+  -webkit-animation: waterfall 10s linear infinite;
+  animation: waterfall 10s linear infinite;
 }
 .art .cycle__top {
-  border-top: 5px solid #191919;
-  border-right: 3px solid #191919;
-  border-bottom: 1px solid #191919;
-  border-left: 1px solid #191919;
+  border-top: 5px solid #f9f9f9;
+  border-right: 3px solid #f9f9f9;
+  border-bottom: 1px solid #f9f9f9;
+  border-left: 1px solid #f9f9f9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 .art .cycle__bottom {
-  border-top: 1px solid #191919;
-  border-right: 1px solid #191919;
-  border-bottom: 5px solid #191919;
-  border-left: 3px solid #191919;
+  border-top: 1px solid #f9f9f9;
+  border-right: 1px solid #f9f9f9;
+  border-bottom: 5px solid #f9f9f9;
+  border-left: 3px solid #f9f9f9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1922,10 +1898,10 @@ nav a {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border-top: 5px solid #191919;
-  border-right: 4px solid #191919;
-  border-bottom: 3px solid #191919;
-  border-left: 2px solid #191919;
+  border-top: 5px solid #f9f9f9;
+  border-right: 4px solid #f9f9f9;
+  border-bottom: 3px solid #f9f9f9;
+  border-left: 2px solid #f9f9f9;
   background: url("../assets/images/banner/bg03b.png") 84px -1080px no-repeat, url("../assets/images/banner/bg01b.png") 426px -1080px no-repeat, url("../assets/images/banner/bg02b.png") 730px -1080px no-repeat, url("../assets/images/banner/bg03b.png") 872px -1080px no-repeat, url("../assets/images/banner/bg02b.png") 95% -1080px no-repeat, url("../assets/images/banner/bg00.jpg") 0 0 repeat;
   background-color: #111;
   -webkit-animation: waterfall 10s linear infinite;
@@ -1935,10 +1911,10 @@ nav a {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #191919;
+  background-color: #f9f9f9;
 }
 .art__line {
   width: 3px;
   height: 100px;
-  background: #191919;
+  background: #f9f9f9;
 }/*# sourceMappingURL=style.css.map */

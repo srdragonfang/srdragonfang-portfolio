@@ -6,7 +6,7 @@
 
 	padding: 7rem 0;
 	background-image: url('../assets/images/bg-2.JPG');
-	color: #daa520;
+	color: rgba(0, 255, 0, 0.5);
 
     gap: 3rem;
 	@include g.flex-col(center);
@@ -20,8 +20,8 @@
 			&-line {
 				width: 100px;
 				height: 2vh;
-				border-top: 3px solid #daa520;
-				border-bottom: 3px solid #daa520;
+				border-top: 3px solid rgba(0, 255, 0, 0.5);
+				border-bottom: 3px solid rgba(0, 255, 0, 0.5);
 			}
 		}
 		&-two {
@@ -41,7 +41,7 @@
 			height: 100px;
 			padding: 0.2rem;
 			transition: 2s ease-in-out;
-			border: 3px groove goldenrod;
+			border: 3px groove rgba(0, 255, 0, 0.5);
 			@include g.center-center;
 			&:hover {
 				transform: rotate(-180deg);
@@ -50,7 +50,7 @@
 			&:hover .loading__symbol--cycle {
 				border-radius: 50%;
 				transform: rotate(900deg);
-				border: 3px solid goldenrod;
+				border: 3px solid rgba(0, 255, 0, 0.5);
 			}
 		}
         
@@ -60,9 +60,9 @@
 			height: 100%;
 			padding: 0.2rem;
 			object-fit: cover;
-			color: #daa520;
+			color: rgba(0, 255, 0, 0.5);
 			transition: 2s ease-in-out;
-			border: 3px groove goldenrod;
+			border: 3px groove rgba(0, 255, 0, 0.5);
 		}
 	}
 }

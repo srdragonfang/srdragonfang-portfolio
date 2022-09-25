@@ -10,7 +10,7 @@ const Loading = () => {
 					<div className='loading__symbol'>
 						<div className='loading__symbol--square'>
 							<div className='loading__symbol--cycle'>
-								<IoMdFingerPrint color='#daa520' size={60} />
+								<IoMdFingerPrint color='rgba(0, 255, 0, 0.5)' size={60} />
 							</div>
 						</div>
 						<p>Enter</p>

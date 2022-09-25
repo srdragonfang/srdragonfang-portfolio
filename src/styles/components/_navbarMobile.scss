@@ -15,10 +15,10 @@
 	& .avatar__outter {
 		width: 70px;
 		height: 70px;
-		border-top: 5px solid #daa520;
-		border-right: 5px solid #191919;
-		border-bottom: 5px solid #191919;
-		border-left: 5px solid #daa520;
+		border-top: 5px solid rgba(0, 255, 0, 0.5);
+		border-right: 5px solid #f9f9f9;
+		border-bottom: 5px solid #f9f9f9;
+		border-left: 5px solid rgba(0, 255, 0, 0.5);
 		transform: rotate(45deg);
 		@include g.background-art;
 		@include g.flex-row(center);
@@ -27,10 +27,10 @@
 		background: #e4ebf5;
 		width: 30px;
 		height: 30px;
-		border-top: 5px solid #191919;
-		border-right: 5px solid #daa520;
-		border-bottom: 5px solid #daa520;
-		border-left: 5px solid #191919;
+		border-top: 5px solid #f9f9f9;
+		border-right: 5px solid rgba(0, 255, 0, 0.5);
+		border-bottom: 5px solid rgba(0, 255, 0, 0.5);
+		border-left: 5px solid #f9f9f9;
 	}
 
 	& img {
@@ -80,11 +80,11 @@
 	font: fonts.$font-martrix;
 	font-size: 2rem;
 	color: rgb(210, 246, 218);
-	text-shadow: 1px 5px 25px #daa520, 1px -5px 15px #daa520;
-	// color: #daa520;
+	text-shadow: 1px 5px 25px rgba(0, 255, 0, 0.5), 1px -5px 15px rgba(0, 255, 0, 0.5);
+	// color: rgba(0, 255, 0, 0.5);
 	font-weight: 700;
-	background: #191919;
-	border: 3px solid #daa520;
+	background: #f9f9f9;
+	border: 3px solid rgba(0, 255, 0, 0.5);
 }
 .controller__bar--button a {
 	transition: all 1s linear;

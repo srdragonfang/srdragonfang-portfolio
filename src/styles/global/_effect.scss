@@ -50,7 +50,7 @@
 		font-size: 50px;
 	}
 	& .item-show {
-		// color: goldenrod;
+		// color: rgba(0, 255, 0, 0.5);
 		font-size: 3rem;
 	}
 	&:hover {
@@ -67,10 +67,10 @@
 }
 .btn__primary {
     padding: 2rem;
-    min-width: 160px;
+    width: 170px;
 	height: 80px;
 	text-decoration: underline;
-	border: 3px solid #191919 !important;
+	border: 3px solid #f9f9f9 !important;
 
 	margin: 0.5rem;
 	font-weight: 600;

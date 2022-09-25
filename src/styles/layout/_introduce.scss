@@ -33,7 +33,7 @@
 					font-size: 2 rem;
 					// color: #e4ebf5;
 					padding: 0.5rem;
-					// text-shadow: 1px 5px 25px #daa520, 1px -5px 15px #daa520;
+					// text-shadow: 1px 5px 25px rgba(0, 255, 0, 0.5), 1px -5px 15px rgba(0, 255, 0, 0.5);
 				}
 
 				& a {
@@ -66,17 +66,19 @@
 }
 
 .section__quote {
-	margin: 0 0 15rem;
-	padding: 3rem;
-	background-color: #17120e;
+	margin: 15rem 0 0 ;
+	// background-color: transparent;
 	gap: 1rem;
 	color: rgb(210, 246, 218);
-	text-shadow: 1px 5px 25px #daa520, 1px -5px 15px #daa520;
+	text-shadow: 1px 5px 25px rgba(0, 255, 0, 0.5), 1px -5px 15px rgba(0, 255, 0, 0.5);
+    padding: 7rem;
+    border-top: 0.1px solid rgba(0, 255, 0, 0.5);
+    border-bottom: 0.1px solid rgba(0, 255, 0, 0.5);
+    @include g.bg-matrix;
+    @include g.flex-col(center);
 
 	&--container {
-        padding: 3rem;
-        border: 0.1px solid #daa520;
-        @include g.bg-matrix;
+        width: 70%;
 		@include g.flex-col(center);
 
 		& > p {

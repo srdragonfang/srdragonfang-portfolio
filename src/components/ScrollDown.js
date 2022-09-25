@@ -15,10 +15,10 @@ function ScrollDown() {
 
 	return (
 		<div className={`scrollDown ${hide && 'scrollHide'}`}>
-			<BsMouse className='scrollDown__icon' size={30} color='#daa520' />
-			<AiOutlineDown className='scrollDown__icon' color='#daa520' />
-			<AiOutlineDown className='scrollDown__icon' color='#daa520' />
-			<AiOutlineDown className='scrollDown__icon' color='#daa520' />
+			<BsMouse className='scrollDown__icon' size={30} color='rgba(0, 255, 0, 0.5)' />
+			<AiOutlineDown className='scrollDown__icon' color='rgba(0, 255, 0, 0.5)' />
+			<AiOutlineDown className='scrollDown__icon' color='rgba(0, 255, 0, 0.5)' />
+			<AiOutlineDown className='scrollDown__icon' color='rgba(0, 255, 0, 0.5)' />
 		</div>
 	);
 }

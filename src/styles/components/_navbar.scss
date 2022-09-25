@@ -5,6 +5,8 @@ nav {
 	transition: all 0.5s;
 	z-index: 101;
 	height: 50px;
+    box-shadow: -1rem 0 3rem #000;
+
 	@include g.background-art;
 }
 
@@ -36,7 +38,7 @@ nav li {
 nav li.brand {
 	max-width: 0;
 	overflow: hidden;
-	background: #daa520;
+	background-color: #17141d;
 	transition: all 0.5s;
 	color: #f9f9f9;
 	font-weight: 700;
@@ -53,7 +55,7 @@ nav li.logo {
 	top: 5px;
 	max-width: 0;
 	overflow: hidden;
-	background: #daa520;
+	background-color: #17141d;
 	transition: all 0.5s;
 }
 
@@ -79,7 +81,7 @@ nav li:not(.brand):hover {
 	height: 40px;
 	border-radius: 50%;
 	border-left: 20px solid #494949;
-	border-right: 20px solid #daa520;
+	border-right: 20px solid #17141d;
 	background-color: #f9f9f9;
 	z-index: 1;
 }
@@ -91,15 +93,15 @@ nav li:not(.brand):hover {
 @keyframes moving_eye {
 	0% {
 		border-left: 5px solid #494949;
-		border-right: 5px solid #daa520;
+		border-right: 5px solid rgba(0, 255, 0, 0.5);
 	}
 	50% {
 		border-left: 20px solid #494949;
-		border-right: 20px solid #daa520;
+		border-right: 20px solid rgba(0, 255, 0, 0.5);
 	}
 	100% {
 		border-left: 5px solid #494949;
-		border-right: 5px solid #daa520;
+		border-right: 5px solid rgba(0, 255, 0, 0.5);
 	}
 }
 nav a {

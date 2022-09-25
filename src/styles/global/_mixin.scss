@@ -41,7 +41,7 @@
 }
 
 @mixin themeMode {
-	background: #191919;
+	background: #f9f9f9;
 	color: #f9f9f9;
 }
 /* -------------------------------------------------------------------------- */
@@ -57,5 +57,5 @@
 	background-color: #111;
 	-webkit-animation: waterfall 10s linear infinite;
 	animation: waterfall 10s linear infinite;
-	// background-color: #191919;
+	// background-color: #f9f9f9;
 }

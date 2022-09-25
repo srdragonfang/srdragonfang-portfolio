@@ -27,7 +27,7 @@ const Navbar = () => {
 				</li>
 				<li className='logo'>
 					<Link to='/'>
-						<GiHadesSymbol color='#daa520' size={30} />
+						<GiHadesSymbol color='rgba(0, 255, 0, 0.5)' size={30} />
 					</Link>
 				</li>
 				<li className='btn-effect-1'>
