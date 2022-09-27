@@ -12,14 +12,8 @@ code {
 		monospace;
 }
 
-
 @property --rotate {
-    syntax: "<angle>";
-    initial-value: 132deg;
-    inherits: false;
-  }
-
-.App {
-    cursor: url(./FigmaCursor.png), auto;
+	syntax: '<angle>';
+	initial-value: 132deg;
+	inherits: false;
 }
-

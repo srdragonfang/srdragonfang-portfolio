@@ -1,14 +1,14 @@
 import React from 'react';
-import Banner from '../components/Banner';
-import Navbar from '../components/Navbar';
+import Banner from './components/Banner';
+import Navbar from './components/Navbar';
 // import NavbarMobile from '../components/NavbarMobile';
-import ScrollDown from '../components/ScrollDown';
+import ScrollDown from './components/ScrollDown';
 // import Banner from '../layouts/Banner';
-import Introduce from '../layouts/Introduce';
-import Project from '../layouts/Project';
-import ProjectPlus from '../layouts/ProjectPlus';
-import Quote from '../layouts/Quote';
-import Skill from '../layouts/Skill';
+import Introduce from './layouts/Introduce/Introduce';
+import Project from './layouts/Project/Project';
+import ProjectPlus from './layouts/Project/ProjectPlus';
+import Quote from './components/Quote';
+import Skill from './layouts/Skill/Skill';
 import Footer from './Footer';
 const Portfolio = () => {
 	// const [visibleSections, setVisibleSections] = React.useState([]);

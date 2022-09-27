@@ -8,7 +8,7 @@
 	& h1 {
         color: rgb(210, 246, 218);
         text-shadow: g.$text-shadow;
-        text-transform: lowercase;
+        animation: font-tranformer2 5s 50s linear infinite;
 	}
 	& p {
 		font-size: 5rem;
@@ -19,7 +19,6 @@
 
 @media screen and (max-width: 426px) {
 	.contact {
-
         & h1 {
             font-size: 5vw;
         }
@@ -27,5 +26,18 @@
 			font-size: 3rem;
 			font-weight: 800;
 		}
+	}
+}
+
+@keyframes font-tranformer2 {
+	0% {
+		text-transform: lowercase;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		text-transform: uppercase;;
+		opacity: 1;
 	}
 }

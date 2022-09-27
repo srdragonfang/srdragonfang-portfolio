@@ -1,6 +1,6 @@
 import React from 'react';
-import Contact from '../layouts/Contact';
-import Credit from '../layouts/Credit';
+import Contact from './components/Contact';
+import Credit from './components/Credit';
 // images
 import background from '../assets/images/background/banner.png';
 

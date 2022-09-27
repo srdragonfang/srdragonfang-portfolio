@@ -8,8 +8,8 @@
 	color: rgb(210, 246, 218);
 	text-shadow: g.$text-shadow;
 	@include g.flex-row(space-between);
-	// gap: 7rem;
 }
+
 @media screen and (max-width: 768px) {
 	.credit {
 		padding: 3rem 1rem;
@@ -19,15 +19,3 @@
 	}
 }
 
-@keyframes font-tranformer2 {
-	0% {
-		text-transform: uppercase;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		text-transform: capitalize;
-		opacity: 1;
-	}
-}

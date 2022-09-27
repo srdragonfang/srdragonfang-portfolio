@@ -5,7 +5,6 @@ body.remove-scroll {
 }
 
 .project {
-
 	@include g.flex-col(flex-start);
 
 	&__item {
@@ -22,13 +21,12 @@ body.remove-scroll {
 			width: 100%;
 			height: 100%;
 
-
 			& h2 {
 				display: block;
 			}
 
 			& div {
-                color: #191919;
+				color: #191919;
 				background-color: #e4ebf5;
 				text-decoration: none;
 			}
@@ -40,7 +38,7 @@ body.remove-scroll {
 		}
 
 		&:hover .project__item--info {
-            gap: 3rem;
+			gap: 3rem;
 			@include g.flex-col(center);
 			@include g.background-art;
 		}
@@ -51,21 +49,17 @@ body.remove-scroll {
 	}
 }
 
-
-
-
-
 @media screen and (max-width: 425px) {
 	.project {
 		.project__container {
-            width: 100%;
+			width: 100%;
 			@include g.flexbox(column, center, flex-start);
 			gap: 3rem;
 		}
 
 		&__item {
 			width: 90vw !important;
-            height: calc(90vw) !important;
+			height: calc(90vw) !important;
 		}
 	}
 }
@@ -73,7 +67,7 @@ body.remove-scroll {
 @media screen and (max-width: 768px) {
 	.project {
 		.project__container {
-            // background-color: brown;
+			// background-color: brown;
 			width: 100%;
 			flex-wrap: wrap;
 			gap: 3rem;
@@ -88,63 +82,63 @@ body.remove-scroll {
 }
 
 @media screen and (max-width: 1924px) {
-    .project {
-        &__container {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            gap: 3rem 3rem;
-            grid-auto-flow: row;
-            grid-template-areas:
-                'item__01 item__02 item__02'
-                'item__01 item__03 item__04'
-                'item__05 item__06 item__04'
-                'item__07 item__07 item__08';
-        }
-    }
-    
-    .project__item {
-        min-height: 280px;
-        box-shadow: -1rem 0 3rem #000;
-    }
-    
-    .project__item:nth-child(1) {
-        grid-area: item__01;
-    }
-    
-    .project__item:nth-child(2) {
-        grid-area: item__02;
-    }
-    
-    .project__item:nth-child(3) {
-        grid-area: item__03;
-    }
-    
-    .project__item:nth-child(4) {
-        grid-area: item__04;
-    }
-    
-    .project__item:nth-child(5) {
-        grid-area: item__05;
-    }
-    
-    .project__item:nth-child(6) {
-        grid-area: item__06;
-    }
-    .project__item:nth-child(7) {
-        grid-area: item__07;
-    }
+	.project {
+		&__container {
+			width: 100%;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			gap: 3rem 3rem;
+			grid-auto-flow: row;
+			grid-template-areas:
+				'item__01 item__02 item__02'
+				'item__01 item__03 item__04'
+				'item__05 item__06 item__04'
+				'item__07 item__07 item__08';
+		}
+	}
+
+	.project__item {
+		min-height: 280px;
+		box-shadow: -1rem 0 3rem #000;
+	}
+
+	.project__item:nth-child(1) {
+		grid-area: item__01;
+	}
+
+	.project__item:nth-child(2) {
+		grid-area: item__02;
+	}
+
+	.project__item:nth-child(3) {
+		grid-area: item__03;
+	}
+
+	.project__item:nth-child(4) {
+		grid-area: item__04;
+	}
+
+	.project__item:nth-child(5) {
+		grid-area: item__05;
+	}
+
+	.project__item:nth-child(6) {
+		grid-area: item__06;
+	}
+	.project__item:nth-child(7) {
+		grid-area: item__07;
+	}
 }
 
-
 .modal__item {
-	padding: 1rem;
+	// padding: 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
 	gap: 1rem;
+	padding: 2rem 3rem 3rem;
 
 	&--buttons {
 		gap: 1rem;
@@ -172,28 +166,35 @@ body.remove-scroll {
 	right: 0;
 	bottom: 0;
 	z-index: 1001;
+    background-color: rgba(128, 128, 128, 0.551);
+    backdrop-filter: blur(2px);
 	@include g.center-center;
 
 	&__container {
-		padding: 2rem 3rem 3rem;
-		background-color: #e4ebf5;
-		box-shadow: g.$box-shadow-out;
+		width: 450px;
+		height: 90vh;
+		background-color: #17141d;
+		box-shadow: -1rem 0 3rem #000;
 		@include g.flexbox(column, center, flex-start);
+		overscroll-behavior-y: contain;
+		overflow-y: scroll;
 
 		&--bar {
+            padding: 0 0 3rem;
 			width: 100%;
-			text-align: right;
-			cursor: pointer;
+			@include g.center-center;
+
+			& > button {
+				outline: 0;
+				border: 0;
+				box-shadow: unset;
+			}
 		}
 
-		&--data {
-			/* display */
-			display: flex;
-			flex-direction: row;
-			align-items: flex-start;
-			justify-content: flex-start;
-			gap: 3rem;
-			/* box */
+		& > img {
+			width: 100%;
+			height: 320px;
+			object-fit: cover;
 		}
 	}
 }

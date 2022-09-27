@@ -65,30 +65,3 @@
 	}
 }
 
-.section__quote {
-	margin: 15rem 0 0 ;
-	// background-color: transparent;
-	gap: 1rem;
-	color: rgb(210, 246, 218);
-	text-shadow: 1px 5px 25px rgba(0, 255, 0, 0.5), 1px -5px 15px rgba(0, 255, 0, 0.5);
-    padding: 7rem;
-    border-top: 0.1px solid rgba(0, 255, 0, 0.5);
-    border-bottom: 0.1px solid rgba(0, 255, 0, 0.5);
-    @include g.bg-matrix;
-    @include g.flex-col(center);
-
-	&--container {
-        width: 70%;
-		@include g.flex-col(center);
-
-		& > p {
-			text-align: center;
-		}
-        
-		& > span {
-			font-weight: 600;
-			width: 100%;
-			text-align: center;
-		}
-	}
-}
